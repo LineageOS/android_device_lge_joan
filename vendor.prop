@@ -190,7 +190,6 @@ ro.nfc.port=I2C
 
 # OMX
 debug.stagefright.omx_default_rank=0
-debug.stagefright.omx_default_rank.sw-audio=1
 vendor.vidc.enc.disable.pq=true
 
 # Pasr
