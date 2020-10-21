@@ -125,6 +125,7 @@ BUILD_BROKEN_ENFORCE_SYSPROP_OWNER := true
 
 # Camera
 USE_CAMERA_STUB := true
+MALLOC_SVELTE_FOR_LIBC32 := true
 
 # Custom Apns for Sprint
 CUSTOM_APNS_FILE := $(DEVICE_PATH)/sprint_apns.xml
