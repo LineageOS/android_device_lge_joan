@@ -133,7 +133,7 @@ PRODUCT_COPY_FILES += \
 
 # Configstore
 PRODUCT_PACKAGES += \
-    android.hardware.configstore@1.1-service
+    disable_configstore
 
 # DAC
 PRODUCT_PACKAGES += \
