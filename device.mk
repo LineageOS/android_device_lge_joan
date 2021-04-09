@@ -13,4 +13,4 @@ PRODUCT_SOONG_NAMESPACES += \
 $(call inherit-product, device/lge/joan-common/joan.mk)
 
 # Inherit proprietary blobs
-$(call inherit-product-if-exists, vendor/lge/joan/joan-vendor.mk)
+$(call inherit-product, vendor/lge/joan/joan-vendor.mk)
