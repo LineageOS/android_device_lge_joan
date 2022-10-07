@@ -491,7 +491,6 @@ system_ext/etc/permissions/telephonyservice.xml|b7831598d3c19c6ce4ef431d1cc44d94
 -system_ext/framework/qcrilhook.jar|ad688364314100318f305ed4ab5defec8766b20a
 -system_ext/framework/qti-telephony-common.jar|20225e98039e3046c0e0d5680a157fc71ebfccb4
 -system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk|ec64fd840c8ce6af847cf65d5366fcd1994772de
-vendor/bin/ATFWD-daemon|e98ca425ec96e18ec663cd35cc1c9935daa25090
 vendor/bin/adpl|97b8bdcd120460c6297414d5ad4b187f48cd95c5
 vendor/bin/diag_mdlog|236df3dc52327eeb032f4dec0b3a418f93505e10
 vendor/bin/hw/qcrild|d2c79b990bd8b51faa863f92f4f4e8f167c3dc58
@@ -512,7 +511,6 @@ vendor/etc/init/dataqti.rc|6abfd1a850d782adbbb6f42c9d8ca870036b2ad1
 vendor/etc/init/ipacm-diag.rc|e3cee56d2e3ca6bf9aafb827827ebea369fc2897
 vendor/etc/init/netmgrd.rc|3d8770715d15374c4c6a535e3f41ea640d193202
 vendor/etc/init/qcrild.rc|17cf4934bf443cf6469d8b3ff622eeb0e4a0aac6
-vendor/etc/seccomp_policy/atfwd@2.0.policy|74fdb7d47bdb6d0cb06b13701a96a76c9171ab5d
 vendor/lib/LGDataFeature_vendor.so|70d71603e98bdeb6fa5e3791a153c080eafd0583
 vendor/lib/libconfigdb.so|712cc227dec8f19644cb963ec9b6cc1da8c2208b
 vendor/lib/libdsi_netctrl.so|df074f939721f51e9fc3fef1b17043e3b77af869
@@ -556,7 +554,6 @@ vendor/lib/vendor.qti.hardware.data.connection@1.0.so|202aea2fb4706b510867244b87
 vendor/lib/vendor.qti.hardware.data.connection@1.1.so|1311215a6a83c29a8f0c7d19286d5e36b9349d58
 vendor/lib/vendor.qti.hardware.data.iwlan@1.0.so|0c28cb65d3545f70356c630a5beddf371b0fa623
 vendor/lib/vendor.qti.hardware.radio.am@1.0.so|8f7d2fc644268f852128ec976e347ad720667d61
-vendor/lib/vendor.qti.hardware.radio.atcmdfwd@1.0.so|d9b7e8c636cbdeb8d7cccfa39e15bf8a9e7fdf25
 vendor/lib/vendor.qti.hardware.radio.internal.deviceinfo@1.0.so|3a83bd65f53e081a66623b4ae37c2fba0db21be6
 vendor/lib/vendor.qti.hardware.radio.lpa@1.0.so|32dab2460db0a21e50ce5b269988fe6f063bd182
 vendor/lib/vendor.qti.hardware.radio.qcrilhook@1.0.so|5821701a41a4a8f3e29186f64f7914c0283b82f3
@@ -616,7 +613,6 @@ vendor/lib64/vendor.qti.hardware.data.connection@1.0.so|3113478250c8b4fbc780b2e8
 vendor/lib64/vendor.qti.hardware.data.connection@1.1.so|574110c458b5f4d4fdcf042c09ad33a2567e742e
 vendor/lib64/vendor.qti.hardware.data.iwlan@1.0.so|942ee0bd552e9cae2720eac47c02f28c6ee32f13
 vendor/lib64/vendor.qti.hardware.radio.am@1.0.so|57d3220548e529ec73600c3084f913a8b10de6cb
-vendor/lib64/vendor.qti.hardware.radio.atcmdfwd@1.0.so|c72a88f48a9a84aca241213a08f279f98ec90349
 vendor/lib64/vendor.qti.hardware.radio.internal.deviceinfo@1.0.so|369ca47d76eba04f1f9138b9f83439501855b330
 vendor/lib64/vendor.qti.hardware.radio.lpa@1.0.so|4595d83a95ae5c3a3dae378545976ec0d1ab0c52
 vendor/lib64/vendor.qti.hardware.radio.qcrilhook@1.0.so|9bf59706fddcbfafaa5ad08f4e9d66b0bed14d12
