@@ -677,8 +677,6 @@ vendor/firmware/leia_pfp_470.fw
 vendor/firmware/leia_pm4_470.fw
 
 # Listen
-lib/vendor.qti.voiceprint@1.0.so:vendor/lib/vendor.qti.voiceprint@1.0.so
-lib64/vendor.qti.voiceprint@1.0.so:vendor/lib64/vendor.qti.voiceprint@1.0.so
 vendor/lib/hw/sound_trigger.primary.msm8998.so
 vendor/lib/libadpcmdec.so
 vendor/lib/libgcs-calwrapper.so
