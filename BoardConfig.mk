@@ -38,6 +38,9 @@ TARGET_SPECIFIC_HEADER_PATH := $(DEVICE_PATH)/include
 # ANT+
 BOARD_ANT_WIRELESS_DEVICE := "qualcomm-hidl"
 
+# Android Verified Boot
+BOARD_AVB_ENABLE := false
+
 # Audio
 BOARD_SUPPORTS_SOUND_TRIGGER_HAL := true
 BOARD_USES_ALSA_AUDIO := true
