@@ -1,6 +1,0 @@
-runtime_resource_overlay {
-    name: "WifiOverlay.lge_msm8998",
-    theme: "WifiOverlay",
-    sdk_version: "current",
-    product_specific: true
-}
