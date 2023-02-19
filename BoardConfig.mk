@@ -18,15 +18,8 @@ DEVICE_PATH := device/lge/joan
 
 TARGET_OTA_ASSERT_DEVICE := v30,joan,h930,h932
 
-# Kernel
-TARGET_KERNEL_CONFIG := lineageos_h930_defconfig
-TARGET_KERNEL_VERSION := 4.4
-
 # inherit from the proprietary version
--include vendor/lge/joan/BoardConfigVendor.mk
-
-# inherit from common lge
--include device/lge/common/BoardConfigCommon.mk
+include vendor/lge/joan/BoardConfigVendor.mk
 
 # Platform
 TARGET_ARCH := arm64
@@ -49,6 +42,8 @@ TARGET_BOARD_PLATFORM_GPU := qcom-adreno540
 TARGET_HAS_NO_SELECT_BUTTON := true
 
 TARGET_USES_64_BIT_BINDER := true
+
+TARGET_SPECIFIC_HEADER_PATH := $(DEVICE_PATH)/include
 
 # APEX image
 DEXPREOPT_GENERATE_APEX_IMAGE := true
@@ -126,7 +121,7 @@ BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 BUILD_BROKEN_ENFORCE_SYSPROP_OWNER := true
 
 # Camera
-USE_CAMERA_STUB := true
+MALLOC_SVELTE_FOR_LIBC32 := true
 
 # Custom Apns for Sprint
 CUSTOM_APNS_FILE := $(DEVICE_PATH)/sprint_apns.xml
@@ -139,6 +134,7 @@ TARGET_FORCE_HWC_FOR_VIRTUAL_DISPLAYS := true
 TARGET_USES_ION := true
 TARGET_USES_HWC2 := true
 TARGET_USES_GRALLOC1 := true
+TARGET_SCREEN_DENSITY := 540
 
 # Extended Filesystem Support
 TARGET_EXFAT_DRIVER := sdfat
@@ -151,6 +147,9 @@ BOARD_HAVE_QCOM_FM := true
 USE_DEVICE_SPECIFIC_GPS := true
 BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := $(TARGET_BOARD_PLATFORM)
 BOARD_VENDOR_QCOM_LOC_PDK_FEATURE_SET := true
+
+# Health
+TARGET_HEALTH_CHARGING_CONTROL_CHARGING_PATH := /sys/class/power_supply/battery/battery_charging_enabled
 
 # HIDL
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
@@ -173,6 +172,9 @@ BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 TARGET_KERNEL_SOURCE := kernel/lge/msm8998
+TARGET_KERNEL_CONFIG := lineageos_joan_defconfig
+TARGET_KERNEL_VERSION := 4.4
+TARGET_KERNEL_LLVM_BINUTILS := false
 
 # Lights
 TARGET_PROVIDES_LIBLIGHT := true
@@ -188,12 +190,17 @@ BOARD_HAS_LARGE_FILESYSTEM := true
 TARGET_USERIMAGES_USE_EXT4 := true
 BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
 
+BOARD_ROOT_EXTRA_SYMLINKS := \
+    /vendor/firmware_mnt:/firmware
+
 # Power
 TARGET_RPM_MASTER_STAT := "/sys/kernel/debug/rpm_master_stats"
 TARGET_WLAN_POWER_STAT := "/sys/kernel/debug/wlan0/power_stats"
 TARGET_TAP_TO_WAKE_NODE := "/sys/devices/virtual/input/lge_touch/tap2wake"
 
 # Recovery
+BOOTLOADER_MESSAGE_OFFSET := 128
+TARGET_RECOVERY_DENSITY := xxxhdpi
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.joan
 
 # RIL
@@ -204,6 +211,7 @@ TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)/releasetools
 
 # SELinux
 include device/qcom/sepolicy-legacy-um/SEPolicy.mk
+include hardware/lge/sepolicy/SEPolicy.mk
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
 SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/public

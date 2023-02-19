@@ -1,22 +1,11 @@
 [
   {
-    "remote": "github",
-    "repository": "lifehackerhansol-android/android_kernel_lge_msm8998",
-    "target_path": "kernel/lge/msm8998",
+    "repository": "android_kernel_lge_msm8998",
+    "target_path": "kernel/lge/msm8998"
   },
   {
-    "remote": "github",
-    "repository": "lifehackerhansol-android/android_device_lge_common",
-    "target_path": "device/lge/common",
-  },
-  {
-    "remote": "github",
-    "repository": "lifehackerhansol-android/android_hardware_lge",
-    "target_path": "hardware/lge",
-  },
-  {
-    "repository": "android_packages_resources_devicesettings",
-    "target_path": "packages/resources/devicesettings",
+    "repository": "android_hardware_lge",
+    "target_path": "hardware/lge"
   },
   {
     "repository": "android_hardware_sony_timekeep",
