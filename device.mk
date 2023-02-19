@@ -1,7 +1,8 @@
 DEVICE_PATH := device/lge/joan
 
 PRODUCT_SOONG_NAMESPACES += \
-    device/lge/joan
+    $(DEVICE_PATH) \
+    hardware/lge
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(DEVICE_PATH)/overlay \
