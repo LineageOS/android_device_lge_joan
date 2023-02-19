@@ -21,8 +21,5 @@ DEVICE_PATH := device/lge/joan
 
 TARGET_OTA_ASSERT_DEVICE := v30,h930,joan
 
-# Soong
-PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)
-
 # inherit from the proprietary version
 include vendor/lge/joan/BoardConfigVendor.mk
