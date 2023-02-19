@@ -826,7 +826,8 @@ on property:persist.vendor.data.perf_ko_load=0
 service cnss-daemon /system/vendor/bin/cnss-daemon -n -l
     class late_start
     user system
-    group system inet wifi
+    group system inet net_admin wifi
+    capabilities NET_ADMIN
 
 # LGE_WIFI_CHANGE, sys.powerctl -> sys.shutdown.requested
 on property:sys.shutdown.requested=*
@@ -1133,7 +1134,7 @@ on property:vendor.display.lcd_density=*
 # Logcat dump daemon, dumps logs to logdump partition
 service logdumpd /system/bin/logcat -b all -v threadtime -D -w /dev/block/bootdevice/by-name/logdump
     class core
-    writepid /dev/cpuset/system-background/tasks
+    task_profiles ServiceCapacityLow
     seclabel u:r:logdumpd:s0
     disabled
 
