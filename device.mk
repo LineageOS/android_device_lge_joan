@@ -480,7 +480,7 @@ PRODUCT_PACKAGES += \
 
 # Vibrator
 PRODUCT_PACKAGES += \
-    android.hardware.vibrator@1.3-service.lge
+    android.hardware.vibrator-service.lge
 
 # VNDK
 PRODUCT_PACKAGES += \
