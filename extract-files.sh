@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 # Copyright (C) 2016 The CyanogenMod Project
-# Copyright (C) 2017-2020 The LineageOS Project
+# Copyright (C) 2017-2023 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -27,11 +27,15 @@ source "${HELPER}"
 # Default to sanitizing the vendor folder before extraction
 CLEAN_VENDOR=true
 
+ONLY_FIRMWARE=
 KANG=
 SECTION=
 
 while [ "${#}" -gt 0 ]; do
     case "${1}" in
+        --only-firmware )
+                ONLY_FIRMWARE=true
+                ;;
         -n | --no-cleanup )
                 CLEAN_VENDOR=false
                 ;;
@@ -86,59 +90,15 @@ function blob_fixup() {
 # Initialize the helper
 setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}" false "${CLEAN_VENDOR}"
 
-extract "${MY_DIR}/proprietary-files.txt" "${SRC}" "${KANG}" --section "${SECTION}"
-
-# Do not clean the vendor folder before fetching other blobs
-CLEAN_VENDOR=false
-
-# Reinitialize the helper for Q910 blobs
-echo "Gathering Q910 blobs"
-echo "Please provide the path to Q910 blobs"
-echo -n "Path:"
-read SRC
-
-if [ -z "${SRC}" ]; then
-    SRC="adb"
+if [ -z "${ONLY_FIRMWARE}" ]; then
+    extract "${MY_DIR}/proprietary-files.txt" "${SRC}" "${KANG}" --section "${SECTION}"
+    extract "${MY_DIR}/proprietary-files_Q910.txt" "${SRC}" "${KANG}" --section "${SECTION}"
+    extract "${MY_DIR}/proprietary-files_h930.txt" "${SRC}" ${KANG} --section "${SECTION}"
+    extract "${MY_DIR}/proprietary-files_h932.txt" "${SRC}" ${KANG} --section "${SECTION}"
 fi
 
-# Initialize the helper
-setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}" false "${CLEAN_VENDOR}"
-
-extract "${MY_DIR}/proprietary-files_Q910.txt" "${SRC}" ${KANG} --section "${SECTION}"
-
-# Reinitialize the helper for H930 blobs
-echo "Gathering H930 blobs for unified build."
-echo "Please provide the path to H930 blobs."
-echo "or hit enter to attempt fetching from a connected device, adb mode."
-echo "You may run this again if fail or skip."
-echo "Without H930 blobs this build will not be unified."
-echo -n "Path:"
-read SRC
-
-if [ -z "${SRC}" ]; then
-    SRC="adb"
-fi
-
-# Initialize the helper
-setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}" false "${CLEAN_VENDOR}"
-
-extract "${MY_DIR}/proprietary-files_h930.txt" "${SRC}" ${KANG} --section "${SECTION}"
-
-# Reinitialize the helper for H932 blobs
-echo "Gathering H932 blobs for unified build."
-echo "Please provide the path to H932 blobs."
-echo "or hit enter to attempt fetching from a connected device, adb mode."
-echo "You may run this again if fail or skip."
-echo "Without H932 blobs this build will not run on T-Mobile H932 devices."
-echo -n "Path:"
-read SRC
-
-if [ -z "${SRC}" ]; then
-    SRC="adb"
-fi
-
-# Initialize the helper
-setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}" false "${CLEAN_VENDOR}"
-extract "${MY_DIR}/proprietary-files_h932.txt" "${SRC}" ${KANG} --section "${SECTION}"
+#if [ -z "${SECTION}" ]; then
+#    extract_firmware "${MY_DIR}/proprietary-firmware.txt" "${SRC}"
+#fi
 
 "${MY_DIR}/setup-makefiles.sh"
