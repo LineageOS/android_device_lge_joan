@@ -11,5 +11,6 @@ set -e
 export DEVICE=joan
 export DEVICE_COMMON=joan-common
 export VENDOR=lge
+export VENDOR_COMMON=${VENDOR}
 
-"./../../${VENDOR}/${DEVICE_COMMON}/setup-makefiles.sh" "$@"
+"./../../${VENDOR_COMMON}/${DEVICE_COMMON}/setup-makefiles.sh" "$@"
