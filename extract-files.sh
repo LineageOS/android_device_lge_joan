@@ -74,15 +74,21 @@ function blob_fixup() {
     vendor/lib/libarcsoft_beauty_picselfie.so)
         ${PATCHELF} --remove-needed libandroid.so "${2}"
         ${PATCHELF} --remove-needed libjnigraphics.so "${2}"
+        ${PATCHELF} --replace-needed libstdc++.so libstdc++_vendor.so "${2}"
         ;;
     vendor/lib/libfilm_emulation.so)
         ${PATCHELF} --remove-needed libjnigraphics.so "${2}"
+        ${PATCHELF} --replace-needed libstdc++.so libstdc++_vendor.so "${2}"
         ;;
     vendor/lib/libmmcamera_bokeh.so)
         ${PATCHELF} --replace-needed libui.so libui_shim.so "${2}"
         ;;
     vendor/lib/libmpbase.so)
         ${PATCHELF} --remove-needed libandroid.so "${2}"
+        ${PATCHELF} --replace-needed libstdc++.so libstdc++_vendor.so "${2}"
+        ;;
+    vendor/lib/libAutoContrast.so|vendor/lib/libSJFingerDetect.so|vendor/lib/libSJVideoNR.so|vendor/lib/libarcsoft_object_tracking.so|vendor/lib/libarcsoft_picselfie_algorithm.so|vendor/lib/libcinemaeffect.so|vendor/lib/libfilm_emulation_symphony.so|vendor/lib/liblghdri.so|vendor/lib/liblgmda.so|vendor/lib/libmorpho_image_stab31.so|vendor/lib/libmorpho_superzoom.so)
+        ${PATCHELF} --replace-needed libstdc++.so libstdc++_vendor.so "${2}"
         ;;
     esac
 }
