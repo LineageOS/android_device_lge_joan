@@ -403,7 +403,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     librmnetctl \
     libandroid_net \
-    libprotobuf-cpp-full \
     android.hardware.radio@1.5 \
     android.hardware.radio@1.5.vendor \
     android.hardware.radio.config@1.2 \
@@ -414,7 +413,7 @@ PRODUCT_PACKAGES += \
     android.system.net.netd@1.1.vendor
 
 PRODUCT_PACKAGES += \
-    libprotobuf-cpp-full-vendorcompat \
+    libprotobuf-cpp-full-3.9.1-vendorcompat \
     libprotobuf-cpp-lite-vendorcompat
 
 # Recovery
