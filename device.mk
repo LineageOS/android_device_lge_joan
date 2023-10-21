@@ -485,7 +485,7 @@ PRODUCT_PACKAGES += \
 # VNDK
 PRODUCT_PACKAGES += \
     libui_shim.vendor \
-    libstdc++.vendor
+    libstdc++_vendor
 
 # Wifi
 PRODUCT_COPY_FILES += \
