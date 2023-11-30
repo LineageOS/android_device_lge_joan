@@ -18,11 +18,6 @@ DEVICE_PATH := device/lge/joan
 
 TARGET_OTA_ASSERT_DEVICE := v30,joan,h930,h932
 
-# Kernel
-TARGET_KERNEL_CONFIG := lineageos_h930_defconfig
-TARGET_KERNEL_VERSION := 4.4
-TARGET_KERNEL_LLVM_BINUTILS := false
-
 # inherit from the proprietary version
 include vendor/lge/joan/BoardConfigVendor.mk
 
@@ -174,6 +169,9 @@ BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 TARGET_KERNEL_SOURCE := kernel/lge/msm8998
+TARGET_KERNEL_CONFIG := lineageos_joan_defconfig
+TARGET_KERNEL_VERSION := 4.4
+TARGET_KERNEL_LLVM_BINUTILS := false
 
 # Lights
 TARGET_PROVIDES_LIBLIGHT := true
