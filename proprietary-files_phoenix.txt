@@ -406,35 +406,6 @@ vendor/lib64/libmmosal.so|b4de8a81ac6e600bfa2e15f9bee20c6ac30e2d89
 vendor/lib64/libstagefright_soft_qtiflacdec.so|0fce07c9afacd90601f6630f55a5601f5d4f0f38
 vendor/lib64/libvpphvx.so|8d12cecadad274389a8671a8ae7be13de9f15cd3
 
-# phoenix_sprout - Perf
-vendor/bin/hw/vendor.qti.hardware.perf@2.2-service|aec79f4a8c8a6810f9a6c0d182f603aa1e83a78f
-vendor/bin/msm_irqbalance|c0910fb319bb8287f176f26078241299455baad0
-vendor/etc/init/vendor.qti.hardware.perf@2.2-service.rc|459b4c23550a56ac545f78c6d391f3d7dd9ba45b
-vendor/lib/libdisplayconfig.qti.so|94e595fc2eb30ae095534d3bfd212a419cbd6936
-vendor/lib/libperfconfig.so|26dbb142a977db5d56badb1be7a42a857bbd6420
-vendor/lib/libperfgluelayer.so|09db6ffac42c4078bd8a8f48dcb0d9d16bd5c34e
-vendor/lib/libperfioctl.so|f41d8a80c2ba1a4857468cff86686d75e930e176
-vendor/lib/libqti-perfd-client.so|537419862cb31be45731c9c90025ff8d20dd9afd
-vendor/lib/libqti-perfd.so|cbeecf410573de028488707f0c61c951aa5a41b9
-vendor/lib/libqti-util.so|d1f1f32e161c060bef9630c18635675c788daa5c
-vendor/lib/libqti-utils.so|be49d59435bce63a8b2191220e9b4d52ce8e8faf
-vendor/lib/vendor.qti.power.pasrmanager@1.0.so|cb99b1320a5df18aab9b3a7b167ffd6c0a35d294
-vendor/lib64/libadaptlaunch.so|ab0c0545283ae165ad91fd8fdd9e87e14f660965
-vendor/lib64/libappclassifier.so|b78aa1e1557080bb537c3778535ea38d7d0c0d2a
-vendor/lib64/libdisplayconfig.qti.so|d6223e443c1b4fa35a195619b610bd7abf022582
-vendor/lib64/libgameoptfeature.so|d05d3851bf429587cb3baf3afe3692767f08d4b9
-vendor/lib64/liblearningmodule.so|435927680b8137f6c953d979be4aeb81cf8c9042
-vendor/lib64/libmeters-ns.so|d58928ce89b0986864ea4e1c4836d3e99ea462cd
-vendor/lib64/libmeters.so|68e5c9ada2ab11b7d29282cfdfefa7f63cd6bd84
-vendor/lib64/libperfconfig.so|86a80d3e74140af6935d3d0d545df43dace74ecc
-vendor/lib64/libperfgluelayer.so|2fde676ea4b01bb5a70a2ae181211dc67452d53d
-vendor/lib64/libperfioctl.so|82daef5e743c747c5884c8ccfad941accf5a13a4
-vendor/lib64/libqti-perfd-client.so|6dffedf4dc21f898d08322893255a8594c9ac031
-vendor/lib64/libqti-perfd.so|482668ce13be74ebd588bfea5a8faa9d4557880b
-vendor/lib64/libqti-util.so|a1fbd72b06c6ce75b66e7db1957dedee18391202
-vendor/lib64/libqti-utils.so|ab1858f754091240bed912a2950fc3d24423992f
-vendor/lib64/vendor.qti.power.pasrmanager@1.0.so|c1574c5879a9beca1b59a2047eeb6c80267eb34d
-
 # phoenix_sprout - Peripheral manager
 vendor/bin/pm-proxy|101d68c137b7304c1d5ca5a5efa97e26ee60a596
 vendor/bin/pm-service|2d626e6ea539521e54d9ac8dfe42722656a0112d
