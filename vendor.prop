@@ -196,7 +196,6 @@ vendor.vidc.enc.disable.pq=true
 vendor.power.pasr.enabled=true
 
 # Perf
-ro.vendor.extension_library=libqti-perfd-client.so
 ro.vendor.qti.sys.fw.bg_apps_limit=48
 
 # QCOM
