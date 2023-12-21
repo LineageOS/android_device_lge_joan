@@ -243,6 +243,7 @@ PRODUCT_PACKAGES += \
     init.lge.fingerprints.rc \
     init.msm8998.rc \
     init.qcom.rc \
+    init.qcom.power.rc \
     init.qcom.usb.rc \
     init.qti.fm.rc \
     init.target.rc
