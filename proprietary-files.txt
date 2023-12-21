@@ -556,20 +556,6 @@ vendor/lib64/libgcs.so
 vendor/firmware/libpn548ad_fw.so:vendor/lib/libpn548ad_fw.so
 vendor/firmware/libpn548ad_fw_64.so:vendor/lib64/libpn548ad_fw_64.so
 
-# Perf
-vendor/etc/perf/commonresourceconfigs.xml
-vendor/etc/perf/perf-profile0.conf
-vendor/etc/perf/perf-profile1.conf
-vendor/etc/perf/perf-profile2.conf
-vendor/etc/perf/perf-profile3.conf
-vendor/etc/perf/perf-profile4.conf
-vendor/etc/perf/perf-profile5.conf
-vendor/etc/perf/perf-profile6.conf
-vendor/etc/perf/perfboostsconfig.xml
-vendor/etc/perf/targetconfig.xml
-vendor/etc/perf/targetresourceconfigs.xml
-vendor/etc/powerhint.xml
-
 # Postprocessing
 vendor/etc/qdcm_calib_data_SW43402_cmd_mode_dsc_dsi_panel.xml
 
