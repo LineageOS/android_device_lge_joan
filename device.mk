@@ -509,14 +509,5 @@ PRODUCT_PACKAGES += \
     ipacm \
     IPACM_cfg.xml
 
-# WiFi Display
-#PRODUCT_PACKAGES += \
-#    libaacwrapper \
-#    libmediaextractorservice \
-#    libnl
-
-#PRODUCT_BOOT_JARS += \
-#    WfdCommon
-
 # Inherit proprietary blobs
 $(call inherit-product, vendor/lge/joan/joan-vendor.mk)
