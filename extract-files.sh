@@ -71,9 +71,6 @@ function blob_fixup() {
         ${PATCHELF} --remove-needed libgui.so "${2}"
         ${PATCHELF} --remove-needed libui.so "${2}"
         ;;
-    vendor/lib/libmpbase.so)
-        ${PATCHELF} --remove-needed libandroid.so "${2}"
-        ;;
     vendor/lib/libarcsoft_beauty_picselfie.so)
         ${PATCHELF} --remove-needed libandroid.so "${2}"
         ${PATCHELF} --remove-needed libjnigraphics.so "${2}"
@@ -83,6 +80,9 @@ function blob_fixup() {
         ;;
     vendor/lib/libmmcamera_bokeh.so)
         ${PATCHELF} --replace-needed libui.so libui_shim.so "${2}"
+        ;;
+    vendor/lib/libmpbase.so)
+        ${PATCHELF} --remove-needed libandroid.so "${2}"
         ;;
     esac
 }
