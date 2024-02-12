@@ -1,5 +1,5 @@
 # All blobs below are from phoenix_sprout Q910UM 40i
-# phoenix_lao_com-user 11 RKQ1.201123.002 21274101794d9 release-keys
+# phoenix_lgu_kr-user 11 RKQ1.201123.002 22005163197a5 release-keys
 
 # phoenix_sprout - ADSP
 vendor/bin/adsprpcd|c8a45eb83a6d70dcbcc1b8ec574391b49e8ca8b9
