@@ -572,7 +572,6 @@ vendor/lib/rfsa/adsp/libvpp_svc_skel.so
 vendor/lib/rfsa/adsp/mmecns_module.so.1
 
 # Fingerprint
-lib64/vendor.lge.hardware.biometrics.fingerprint@2.1.so:vendor/lib64/vendor.lge.hardware.biometrics.fingerprint@2.1.so
 vendor/bin/hw/vendor.lge.hardware.biometrics.fingerprint@2.1-service
 vendor/etc/init/vendor.lge.hardware.biometrics.fingerprint@2.1-service.rc
 vendor/lib64/hw/fingerprint.msm8998.so
