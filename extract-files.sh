@@ -59,6 +59,9 @@ fi
 
 function blob_fixup() {
     case "${1}" in
+    product/etc/permissions/vendor.qti.hardware.data.connection-V1.*-java.xml)
+        sed -i "s/\"2\.0/\"1\.0/g" "${2}"
+        ;;
     vendor/lib/hw/audio.primary.msm8998.so)
         ${PATCHELF} --add-needed libprocessgroup.so "${2}"
         ;;
