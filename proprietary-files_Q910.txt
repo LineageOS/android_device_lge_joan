@@ -203,6 +203,18 @@ vendor/lib64/hw/vendor.qti.esepowermanager@1.1-impl.so|8e4fde017e2bdec8a1540e893
 vendor/lib64/vendor.qti.esepowermanager@1.0.so|cc0bffe062222a2ab8a0892cf0f1fa75e17e41c0
 vendor/lib64/vendor.qti.esepowermanager@1.1.so|9b5885135fd1867dcdb3c94c0861a71c17fe4515
 
+# phoenix_sprout - FM
+system_ext/lib/fm_helium.so|29dda7dd7355000b1458e942525d34eb730718ff
+system_ext/lib/libfm-hci.so|49956d8caed99cd76f259671b339d2bcc3f3e953
+system_ext/lib/vendor.qti.hardware.fm@1.0.so|963f7dd648395b867ac88a229a1b4f442b54fe3a
+system_ext/lib64/fm_helium.so|99140db2b53af1b70577507517540e64aff87d7a
+system_ext/lib64/libfm-hci.so|383f4b9659259e5dc13257d5ca65bb98587fede2
+system_ext/lib64/vendor.qti.hardware.fm@1.0.so|4c67cd7c09e4531249572ab16fb61f0031a6cc33
+vendor/lib/hw/vendor.qti.hardware.fm@1.0-impl.so|ebf594a2d4ca2ebee48f8658d2347abbe2889c0f
+vendor/lib/vendor.qti.hardware.fm@1.0.so|ba048bf218178c010e63dc4fd5e10dad33734679
+vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so|5ddac2753b0302744b93b5c1f429f6325ab709ac
+vendor/lib64/vendor.qti.hardware.fm@1.0.so|7d03d22f68755fca2fadc4b7ff84f875d90fa3d4
+
 # phoenix_sprout - GPS
 vendor/bin/hw/android.hardware.gnss@2.1-service-qti|9ec405b39007481c5e5396b67fed1c77f5ea8476
 vendor/bin/loc_launcher|48ef07c29d6913cabe91575cb090a03d0bdce741
