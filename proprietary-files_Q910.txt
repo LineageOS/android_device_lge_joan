@@ -114,6 +114,57 @@ vendor/lib/libdpmqmihal.so|7e8a9ee980b0a19f1af2de754a7ebb64811b9e75
 vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so|c5c893e86d38b8aa8cd277ccb8b011fb2f19995e
 vendor/lib64/libdpmqmihal.so|ffcd85e1f6bf7d54f37953edc2cb2c4a61fc894a
 
+# phoenix_sprout - DRM
+system_ext/lib/vendor.qti.hardware.qseecom@1.0.so|86151762b616878d8e3dbd7f54163c4ca46c42f2
+system_ext/lib64/vendor.qti.hardware.qseecom@1.0.so|c791f087e70afa25eece01df688cca10c98996fd
+vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service|9bbbb98699438abb8da802c04b03f9a426e6140c
+vendor/bin/qseecomd|fbaadec73605f1030441102f75f65e7798796f2a
+vendor/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc|0f43244d70d5efc1e4f089b926a9dc4f59e53db1
+vendor/lib/hw/vendor.qti.hardware.qseecom@1.0-impl.so|7b9c27241d1dc8087e68c222527fdd3e6670483f
+vendor/lib/libGPreqcancel.so|f0c71ad5f778f59f8d14c75d610aa3bde6eae219
+vendor/lib/libGPreqcancel_svc.so|ad4f9c1b7f998f33d2b3b790e3827c174fe933bd
+vendor/lib/libQSEEComAPI.so|587bfec31d5b9fe52d64280a496eedd19475e714
+vendor/lib/libStDrvInt.so|e0efeff40b380d12403544f2dc5d48cd288b7c07
+vendor/lib/libbase64.so|40b3cc616764d4cba44985abf3bb38d17b992407
+vendor/lib/libcpion.so|c157e038bb8cf381e08cd1b92af0f9d418553e78
+vendor/lib/libdrmfs.so|0c6831c84efb799d88308634e8e67f86f648f4fd
+vendor/lib/libdrmtime.so|79c55626b04c908d7d2a4c0e0c118d595a98bdf7
+vendor/lib/libhdcpsrm.so|ef5013db980f891649b1878f3653b20c699ea76a
+vendor/lib/libqisl.so|1cdc6be61159c0e48a9fe88896129ef4f733c3d8
+vendor/lib/librmp.so|12bef0a73bae9c1eb34fedd2ff564f47faad80a0
+vendor/lib/librpmb.so|52997838be16b41972eeb53549995e0ae6501a6c
+vendor/lib/libspl.so|d5fa014019673d8e6b8a0785261914748f89011b
+vendor/lib/libssd.so|0372b7a095cf519c0ff6f9ce95a09ca0c516516c
+vendor/lib/libtzdrmgenprov.so|16af90b327b498b718634174c0678302c49a104c
+vendor/lib/vendor.qti.hardware.qseecom@1.0.so|06db600b8a3096366ba4f9e772d8fb9c4ae23b93
+vendor/lib64/hw/vendor.qti.hardware.qseecom@1.0-impl.so|549efb5fe6700fbf1a1c4ffaf4682fc1cd4db8a2
+vendor/lib64/libGPreqcancel.so|cef7983d5aceb03b4c422731c838ead1a8f3fed4
+vendor/lib64/libGPreqcancel_svc.so|e9874fe970ced25c88baae1d758ef0ceb8effa6d
+vendor/lib64/libQSEEComAPI.so|1d1ee2a76842d565b3af0f98a47e80a92a0bc674
+vendor/lib64/libSecureUILib.so|f63bbf3a468529a91a43c28b2bc0d8f43786c01c
+vendor/lib64/libStDrvInt.so|8e6dae4cf49691c528fc466b5e04757e748b9dcd
+vendor/lib64/libbase64.so|70bc95e0861eb969d7361c3d13727180c83c44b8
+vendor/lib64/libcpion.so|0a6999ca33dea3bed4301106fc225f9b11b9f289
+vendor/lib64/libdrmfs.so|cf8706de5796a29fec22e2b1e0edd2aacc7ffc7e
+vendor/lib64/libdrmtime.so|a3a2686bf4049adf67612fe890d94bc54b5fc4e6
+vendor/lib64/libhdcpsrm.so|affdc2195766c34226510dd422fbf22f689b25b2
+vendor/lib64/libqisl.so|529d7e20bb33147fe3404c1a58d266e49228046a
+vendor/lib64/librmp.so|2618a622b4bcd285878f9a65bf75fef57885bc2e
+vendor/lib64/librpmb.so|7e79c722e87fbe1de6c1b1032e1778f8c91551cb
+vendor/lib64/libsecureui_svcsock.so|8cb2b74edaf3ef77c8da0799cf241426a441d51f
+vendor/lib64/libspl.so|f9c12bc40b075ef5b933fe0ff6b86ebe72a031db
+vendor/lib64/libssd.so|d056d130421f999321f32e046165776e20f1027d
+vendor/lib64/libtzdrmgenprov.so|5104c6dea64456d87c349cd97d15b2dc2c53a4cb
+vendor/lib64/vendor.qti.hardware.qseecom@1.0.so|fe1bde67c8944ca9100962e7bad14d2f7bb98594
+
+# phoenix_sprout - DRM (Widevine)
+vendor/bin/hw/android.hardware.drm@1.3-service.widevine|7c65a818f9c3d00051698e2a51425058083d69c4
+vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc|c35e1a6f9a6faff19064a81e07c4be82ceaf4bb5
+-vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml|ebebcf8f367641480cf7d512fc06e6ab777527be
+vendor/lib/liboemcrypto.so|14ffb67ee3610c270735335e1705fb068e948804
+vendor/lib64/liboemcrypto.so|6280a072d0e5e37402909dce9936867438f4a945
+vendor/lib64/libwvhidl.so|a2895686778b2b08b6c53ac22bf01120b1daaec3
+
 # phoenix_sprout - ESE
 vendor/bin/hw/vendor.qti.esepowermanager@1.1-service|2972bda8ae515a80422a2d7d3ebf4c6b967f5aa2
 vendor/etc/init/vendor.qti.esepowermanager@1.1-service.rc|3c024c7135ec3dd8658624509ee61396a74f1ede
@@ -370,6 +421,20 @@ vendor/lib64/libqmi_csi.so|5dae08f76be58e531bcaaade08758c12ac84ee09
 vendor/lib64/libqmi_encdec.so|1184436f74c3993e466d9b7cbf45055ef9c7ac6e
 vendor/lib64/libqmi_legacy.so|3fe91157d401c35f7445ba2e275b3ac0627bcfe4
 vendor/lib64/libqmiservices.so|0866727c01b1dcb3f3eda429b332b427a31a1b87
+
+# phoenix_sprout - Qualcomm Trusted Execution Environment
+vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service|f8dc88c7166ffc2c1d997e7d5f16a8eb69c37cfc
+vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc|c966350ee67d3a7c73ca7184e3725264025d16f5
+vendor/lib/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so|b972c6026a512900a34e9caf75ce573981d4f796
+vendor/lib/libGPQTEEC_vendor.so|ab737e64c2fe5e650a52bf2cd28ad7df2376ab1c
+vendor/lib/libGPTEE_vendor.so|d1ce5aebe0bc1a31f17c8dca55e2e9c2c7dff744
+vendor/lib/libQTEEConnector_vendor.so|56496036beb17efa9a5213bc12dc018dd1aaca66
+vendor/lib/vendor.qti.hardware.qteeconnector@1.0.so|56eaeb4e418a0e7bf0248992da6a1e33600bbb63
+vendor/lib64/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so|375e753fa751bbf727a9bfebcaea9c65d8c240b3
+vendor/lib64/libGPQTEEC_vendor.so|22bf79c99fffb5a96c5a674e9d002f6472267de1
+vendor/lib64/libGPTEE_vendor.so|a8896a022e2b977997a40be9c584ff778d25c0f9
+vendor/lib64/libQTEEConnector_vendor.so|62d8993f51e0d4a0c4d6ae2645512ddfc76577f3
+vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so|3d285aedf54c067181a1ff2c7a445ac648dc0d76
 
 # phoenix_sprout - Quick charge
 vendor/bin/hvdcp_opti|d712386440265ec285b28189b1730cad77a6ecd3
@@ -680,6 +745,23 @@ vendor/lib/libmiracast.so|a2fad1fd77cff83b5fe21ceb8d910731cc3663ee
 vendor/lib/vendor.qti.hardware.sigma_miracast@1.0.so|7bdca50382e8c764bc440b0f222d77f6a6666580
 vendor/lib64/libmiracast.so|5944569d01277200b5c7729d10801c5634ab9e39
 vendor/lib64/vendor.qti.hardware.sigma_miracast@1.0.so|7f486b994b988cc47428e96eec5cead0101cf157
+
+# phoenix_sprout - Soter
+vendor/bin/hw/vendor.qti.hardware.soter@1.0-service|a6ea6031c27889797b96fe29ba100924b79fe3fb
+vendor/bin/vendor.qti.hardware.soter@1.0-provision|db209a4e3c7bebd83fdd6639246a88214c8f18c5
+vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc|76447a61ad5529949365eeb7e8ca000e48bd28ae
+vendor/lib/hw/vendor.qti.hardware.soter@1.0-impl.so|d5e7865304f476c50035cd71e279fc60f0227f22
+vendor/lib/vendor.qti.hardware.soter@1.0.so|b0ded21f4d807a99592749d2ea1114b00b9629ff
+vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so|911252cc6f13cea0fcb6639894a744bf74b0bdca
+vendor/lib64/vendor.qti.hardware.soter@1.0.so|963e5e1d9908ccef5b1d311b64801de93b929791
+
+# phoenix_sprout - Trusted User Interface
+system_ext/lib/vendor.qti.hardware.tui_comm@1.0.so|d02bf7dc5c2f144b72051394d30b21dbe5e0eda4
+system_ext/lib64/vendor.qti.hardware.tui_comm@1.0.so|fd11bbe37b13b5b2b98c8979d3f0be961389c6d6
+vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti|e8d97981d09a4e34907d13bcbbd10f03572c9218
+vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc|2cfc563d7e1579374f001c94588fae7835a12ffc
+vendor/lib/vendor.qti.hardware.tui_comm@1.0.so|0ff139504e354b06b9cb230bb2e34406c3700b66
+vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so|520d20c145f1c8109470e592bcc360d09b5915bb
 
 # phoenix_sprout - Wifi
 vendor/bin/cnss-daemon|5e87c9a71b4830e53c945e8f8b4307cb249d815d
