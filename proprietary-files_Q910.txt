@@ -86,6 +86,34 @@ vendor/lib64/vendor.qti.hardware.data.qmi@1.0.so|b17a82a9740832bd686c3d4c4e36d0e
 vendor/lib64/vendor.qti.hardware.slmadapter@1.0.so|07bf28004086b972367c44703bd0247d7a78faf4
 vendor/lib64/vendor.qti.latency@2.0.so|bbf41871ccea5a21c1c6cd0fac3c034692826f11
 
+# phoenix_sprout - Display (Postprocessing)
+system_ext/lib/vendor.display.color@1.0.so|8c93924d63bf1fded34485ed48f294ff223f3f75
+system_ext/lib/vendor.display.color@1.1.so|8ce4503bb4c773be8fa20774f74b153242540ac1
+system_ext/lib/vendor.display.color@1.2.so|3ad94268b5c7b7af0f333e3c041b8fc6f3e000cd
+system_ext/lib64/vendor.display.color@1.0.so|515269a2a284b3cf37c6e11c9565e69beccac0e0
+system_ext/lib64/vendor.display.color@1.1.so|fd8fa7d309faf47fdd3f2d85ae3ee57d2ef5111c
+system_ext/lib64/vendor.display.color@1.2.so|9eea9db8e783ff167a46698f43b3e79daa109e73
+vendor/bin/hw/vendor.display.color@1.0-service|fe8aebf4caa5d3d5ae8f6a8ceef0f5718e89f8ec
+vendor/etc/init/vendor.display.color@1.0-service.rc|5ad673f879b3685a0e79b5633437e5499cb94f48
+vendor/lib/libdisp-aba.so|b19ebd56b8a7b196626e1ac929bdfde0dccf7500
+vendor/lib/libmm-hdcpmgr.so|9992596e8ee5115b1573a7242276b8676d52aa68
+vendor/lib/vendor.display.color@1.0.so|199da79235b81fe13dac635d848ce0c83d08e3a7
+vendor/lib/vendor.display.color@1.1.so|6071d123291cff488ae9159925a5b4ea1d8b8707
+vendor/lib/vendor.display.color@1.2.so|6e458f49e6f81de2dba845419aff378bc8d3c864
+vendor/lib/vendor.display.postproc@1.0.so|d486750ab3ac64ea75857d7841de65e21b7ebaa9
+vendor/lib64/libdisp-aba.so|c5c0f5f3d053e1663379d152fdc84ac66bb0ea1d
+vendor/lib64/libmm-hdcpmgr.so|99cf7e11c8e08ddb92deb8fbd514cf874bedaf63
+vendor/lib64/vendor.display.color@1.0.so|b630ac4c0ce54d13515003742060ccfd3b1c6999
+vendor/lib64/vendor.display.color@1.1.so|93b4cdddb281780c9c8e24a8ac1e8680c8e336e6
+vendor/lib64/vendor.display.color@1.2.so|c86a3015156374c4b5c2476ed80e4fcc337deb4a
+vendor/lib64/vendor.display.postproc@1.0.so|91b4c3c1857bec34f493259982067b2d2acb068a
+
+# phoenix_sprout - Display (QDUtils)
+system_ext/lib/vendor.qti.hardware.qdutils_disp@1.0.so|1bf485825187cbd22b5c38d40311a3ea1a94e544
+system_ext/lib64/vendor.qti.hardware.qdutils_disp@1.0.so|664e05fe82b84a5bbf6bc9b768b6435acda1b33c
+vendor/lib/vendor.qti.hardware.qdutils_disp@1.0.so|d117bb02fdf964f86cef9991b709f8c9726762f4
+vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so|fe2b9e9b6df7c4c75dab54d120ebfe92b94cca23
+
 # phoenix_sprout - DPM
 bin/dpm|0bffa2bc2277021b6579b32f65edccfd2f2b6ffb
 -framework/dpm.jar|0af5dbe707e84e7960dd2cd6bd6617f14a60c486
