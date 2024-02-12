@@ -62,7 +62,7 @@ function blob_fixup() {
     vendor/lib/hw/audio.primary.msm8998.so)
         ${PATCHELF} --add-needed libprocessgroup.so "${2}"
         ;;
-    vendor/lib64/hw/audio.primary.msm8998.so)
+    vendor/lib*/hw/audio.primary.msm8998.so)
         ${PATCHELF} --add-needed libprocessgroup.so "${2}"
         ;;
     vendor/lib/hw/camera.msm8998.so)
