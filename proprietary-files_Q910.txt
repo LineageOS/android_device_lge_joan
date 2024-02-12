@@ -20,6 +20,10 @@ vendor/lib64/libmdsprpc.so|bce1a9f5891b146400158d852175ebb13e84bd8d
 vendor/lib64/libsdsprpc.so|29e9e23304e9a2f53d2eaa3472266a59fb114182
 vendor/lib64/vendor.qti.hardware.dsp@1.0.so|7ca76c41ebc45d6b7f8b871d624de0a26b2554e7
 
+# phoenix_sprout - ANT+
+-vendor/lib/hw/com.dsi.ant@1.0-impl.so|c8499c1e01b2b2e58e28759065f90d39b215c3c4
+-vendor/lib64/hw/com.dsi.ant@1.0-impl.so|32bc80e74f8a9634bf1a459e78136cfdb890b703
+
 # phoenix_sprout - Audio
 -vendor/lib/libaudioparsers.so|a8ad1766511c4055f0424e5ada211bda4a0ee9d4
 -vendor/lib64/libaudioparsers.so|2a485150809270f527ce53462b938cf567316f4a
@@ -31,6 +35,24 @@ vendor/bin/power_off_alarm|0e852641f15cd2ed34d630ca3c902cc617ea14d4
 vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc|a03a9a1c818595b19272ea6ffb466e23a7fc3b05
 vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so|48eb352228fe38184e3bbd2917a2ba7a8d0898f1
 vendor/lib64/vendor.qti.hardware.alarm@1.0.so|31675a6c227cb3c4955705c07fdb563b66ff07c5
+
+# phoenix_sprout - Bluetooth
+vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|5d378621fc8a1b8db472b67feab52629656a5eba
+vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc|f4ee3b2da2b08647447869ade86ec63f7340accc
+vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so|25ba5d5ccffc47bf5a9cebc2ffdce09296b84399
+vendor/lib/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so|5235dc7552a8f7cd49ec06d3a6f7fdc6d28c520b
+vendor/lib/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so|9e816816e8bea287b72c3ff2dd331bd0db6b9181
+vendor/lib/libbt-hidlclient.so|9d47d8054b76eddbaad6b1775def84ee183dcf59
+vendor/lib/libbtnv.so|ce0a2b51ba07adebdcadb3b5800e8dacf1d06d54
+vendor/lib/vendor.qti.hardware.bluetooth_sar@1.0.so|d507c88640552904d6628b8030a91e5719f14fdf
+vendor/lib/vendor.qti.hardware.bluetooth_sar@1.1.so|cc21b7c1f4fc21a377c7d955cd3bf07bdc82ace2
+vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so|83abef670acf611a8892216abd07f70802b623c2
+vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so|154c07609391b10236ef05a0c2f826d33bdbd5ac
+vendor/lib64/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so|ff513308f8a0d872157956b521122abd41e42ca1
+vendor/lib64/libbt-hidlclient.so|0f777cb9b0e50e13a8536885fe6c99f2bd7124ad
+vendor/lib64/libbtnv.so|bf39bdf7102140c79140b3218cf979e8e7917214
+vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so|5238bf5f8389414a57b8514176fe5000aceb1429
+vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so|64d35f73a73d37e005f3a2233b712f526bb91cc3
 
 # phoenix_sprout - CNE
 -vendor/app/CneApp/CneApp.apk|96357b43b5183987e1863cc00757ff6200ddf92d
@@ -645,8 +667,8 @@ vendor/radio/qcril_database/upgrade/4_version_update_ecc_table.sql|0734c6a2863ed
 vendor/radio/qcril_database/upgrade/5_version_update_ecc_table.sql|fcb2cba3bfd718ecdc8d3cfac3a0b2b2c7e8c506
 
 # phoenix_sprout - Radio (IMS)
-product/etc/permissions/vendor.qti.hardware.data.connection-V1.0-java.xml|335d6da6763240d58a1598f95bed50bb80e3e71d|75e8a824d368cd4172985c884796381327d950da
-product/etc/permissions/vendor.qti.hardware.data.connection-V1.1-java.xml|f21207db1805ec6ba512f526b795822794ff6274|620c9fa0047bb681e918af2d1e7a98c648f45fb7
+product/etc/permissions/vendor.qti.hardware.data.connection-V1.0-java.xml|75e8a824d368cd4172985c884796381327d950da
+product/etc/permissions/vendor.qti.hardware.data.connection-V1.1-java.xml|620c9fa0047bb681e918af2d1e7a98c648f45fb7
 system_ext/etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml|bd9fc166b542b4e730f194ebc996957770d9d497
 system_ext/etc/permissions/com.qualcomm.qti.imscmservice-V2.1-java.xml|b40fc74f7d5e58b4e918f952b89a79cf2a5c4088
 system_ext/etc/permissions/com.qualcomm.qti.imscmservice-V2.2-java.xml|bfceff47fb0b55a418bed71de6050d876a776ac7
