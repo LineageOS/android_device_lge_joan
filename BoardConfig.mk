@@ -55,9 +55,6 @@ BUILD_BROKEN_ENFORCE_SYSPROP_OWNER := true
 # Camera
 MALLOC_SVELTE_FOR_LIBC32 := true
 
-# Custom Apns for Sprint
-CUSTOM_APNS_FILE := $(DEVICE_PATH)/sprint_apns.xml
-
 # Display
 MAX_EGL_CACHE_KEY_SIZE := 12*1024
 MAX_EGL_CACHE_SIZE := 2048*1024
