@@ -50,6 +50,9 @@ persist.sys.wfd.virtual=0
 # Fastbootd
 ro.fastbootd.available=true
 
+# Media
+media.settings.xml=/vendor/etc/media_profiles_vendor.xml
+
 # Perf
 ro.vendor.qti.sys.fw.bg_apps_limit=48
 
