@@ -18,7 +18,6 @@ persist.vendor.lge.sys.thermald_miti_off	u:object_r:thermal-engine_prop:s0
 
 vendor.gsm.version.baseband					u:object_r:baseband_prop:s0
 persist.data_netmgrd_mtu					u:object_r:netmgrd_prop:s0
-vendor.powerhal.							u:object_r:power_prop:s0
 persist.mmi.misc_dev_path					u:object_r:qti-shell_prop:s0
 vendor.lge.wlan.earpiece					u:object_r:vendor_audio_prop:s0
 fpc_kpi										u:object_r:vendor_fp_prop:s0
