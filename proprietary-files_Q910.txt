@@ -1,4 +1,4 @@
-# All blobs below are from phoenix_sprout Q910UM 40i
+# All blobs below are from phoenix_sprout Q927L 30s
 # phoenix_lgu_kr-user 11 RKQ1.201123.002 22005163197a5 release-keys
 
 # phoenix_sprout - ADSP
