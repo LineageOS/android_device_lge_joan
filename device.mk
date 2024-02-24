@@ -264,7 +264,6 @@ PRODUCT_PACKAGES += \
     init.lge.power.rc \
     init.lge.sensors.rc \
     init.lge.usb.configfs.rc \
-    init.lge.usb.rc \
     init.msm8998.rc \
     init.qcom.rc \
     init.qcom.usb.rc \
