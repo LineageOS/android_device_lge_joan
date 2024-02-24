@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "fc6d96e4_89a71f8e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 31496
+      },
+      "writtenOn": "2024-02-24T22:21:02Z",
+      "side": 1,
+      "message": "Will be needed when sm8150 bringup comes around",
+      "revId": "8d7dd7a5f1a9c4be88692a21e73081447b9dbca4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
