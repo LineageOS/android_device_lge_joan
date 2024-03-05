@@ -7,7 +7,6 @@ on init
     mkdir /OP
     mkdir /mnt/vendor/persist-lg 0771 system system
     mkdir /mnt/vendor/sns 0755 system system
-    mkdir /mnt/vendor/mpt 0775 system system
 
 on fs
     wait /dev/block/platform/soc/${ro.boot.bootdevice}
@@ -29,10 +28,6 @@ on post-fs
     chown system system /mnt/vendor/sns
     chmod 0755 /mnt/vendor/sns
     restorecon_recursive /mnt/vendor/sns
-
-    chown system system /mnt/vendor/mpt
-    chmod 0775 /mnt/vendor/mpt
-    restorecon_recursive /mnt/vendor/mpt
 
     chown system radio /mnt/vendor/eri
     chmod 0771 /mnt/vendor/eri

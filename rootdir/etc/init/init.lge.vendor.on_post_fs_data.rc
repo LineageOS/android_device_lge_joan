@@ -66,8 +66,6 @@ on post-fs-data
     restorecon_recursive /mnt/vendor/persist-lg
     restorecon /mnt/vendor/sns
     restorecon_recursive /mnt/vendor/sns
-    restorecon /mnt/vendor/mpt
-    restorecon_recursive /mnt/vendor/mpt
     restorecon /mnt/vendor/persist
     restorecon_recursive /mnt/vendor/persist
     restorecon /cust
