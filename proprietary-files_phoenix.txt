@@ -211,8 +211,6 @@ vendor/lib64/vendor.qti.hardware.qseecom@1.0.so|fe1bde67c8944ca9100962e7bad14d2f
 vendor/bin/hw/android.hardware.drm@1.3-service.widevine|7c65a818f9c3d00051698e2a51425058083d69c4
 vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc|c35e1a6f9a6faff19064a81e07c4be82ceaf4bb5
 -vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml|ebebcf8f367641480cf7d512fc06e6ab777527be
-vendor/lib/liboemcrypto.so|14ffb67ee3610c270735335e1705fb068e948804
-vendor/lib64/liboemcrypto.so|6280a072d0e5e37402909dce9936867438f4a945
 vendor/lib64/libwvhidl.so|a2895686778b2b08b6c53ac22bf01120b1daaec3
 
 # phoenix_sprout - ESE
