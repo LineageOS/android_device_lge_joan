@@ -17,7 +17,6 @@
 /mnt/vendor/sns																	u:object_r:sns_file:s0
 /mnt/vendor/sns/cal(/.*)?														u:object_r:sns_file:s0
 /mnt/vendor/persist-lg/sensors(/.*)?											u:object_r:sensors_persist_file:s0
-/vendor/sns(/.*)?																u:object_r:sns_file:s0
 
 /(vendor|system/vendor)/bin/timekeep											u:object_r:timekeep_exec:s0
 
