@@ -504,7 +504,7 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_cfg.ini
 
 PRODUCT_PACKAGES += \
-    android.hardware.wifi@1.0-service.legacy \
+    android.hardware.wifi-service \
     hostapd \
     hostapd_cli \
     libwifi-hal-qcom \
