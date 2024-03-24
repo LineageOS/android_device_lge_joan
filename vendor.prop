@@ -260,6 +260,10 @@ persist.delta_time.enable=true
 # Timeservice
 persist.timed.enable=true
 
+# USB
+vendor.usb.controller=a800000.dwc3
+vendor.usb.device=a800000.ssusb
+
 # Voice assistant
 ro.opa.eligible_device=true
 
