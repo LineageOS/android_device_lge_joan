@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3c9200ab_8d30188d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 11409
+      },
+      "writtenOn": "2024-03-27T15:37:51Z",
+      "side": 1,
+      "message": "This commit does not include keyboard layout files (the original commit message was accidentially not updated with the final patch set).\nIf required, you should add them to the vendor repository. Or maybe change the commit message.",
+      "revId": "d3772e8aeced65e66b91637e441c71f4bc15820d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
