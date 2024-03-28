@@ -16,6 +16,23 @@
       "message": "This commit does not include keyboard layout files (the original commit message was accidentially not updated with the final patch set).\nIf required, you should add them to the vendor repository. Or maybe change the commit message.",
       "revId": "d3772e8aeced65e66b91637e441c71f4bc15820d",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8b5f984b_d5c46c3a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 31496
+      },
+      "writtenOn": "2024-03-28T12:03:16Z",
+      "side": 1,
+      "message": "I have to agree with Wolfram here; those keycodes are not the gesture keycodes sent by our kernel driver. (We don\u0027t need a keylayout though; pretty sure the in-tree touch service handles it for us.)\n\nWill check it out on my device, but the commit message should be changed.",
+      "revId": "d3772e8aeced65e66b91637e441c71f4bc15820d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
