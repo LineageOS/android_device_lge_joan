@@ -51,6 +51,23 @@
       "parentUuid": "8b5f984b_d5c46c3a",
       "revId": "d3772e8aeced65e66b91637e441c71f4bc15820d",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "367b7543_17cfc8b6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 26777
+      },
+      "writtenOn": "2024-03-28T12:44:23Z",
+      "side": 1,
+      "message": "I am just waiting for my build sever to confirm this, it might not be needed anymore.\n\nAlso, it seems like running the builds on Oreo firmware will not yield a correct model number, a note regarding the need to run on Pie firmware may be needed.\n\nAnd I also find the logs a bit spammy, especially some of those from LGE, you would hex edit those file by calling nop instead of the logging function, I have done that too mata too. (https://github.com/LineageOS/android_device_essential_mata/commit/7a62a8454eb7ec7be4d27580a211539a9e1b638c)",
+      "revId": "d3772e8aeced65e66b91637e441c71f4bc15820d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
