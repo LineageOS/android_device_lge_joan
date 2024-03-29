@@ -1,5 +1,6 @@
 /*
- * Copyright (c) 2016 The CyanogenMod Project
+ * Copyright (C) 2016 The CyanogenMod Project
+ *               2017 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -28,16 +29,16 @@ public class PocketModeService extends Service {
     private static final String TAG = "PocketModeService";
     private static final boolean DEBUG = false;
 
-    private PocketSensor mPocketSensor;
+    private ProximitySensor mProximitySensor;
 
     @Override
     public void onCreate() {
         if (DEBUG) Log.d(TAG, "Creating service");
-        mPocketSensor = new PocketSensor(this);
+        mProximitySensor = new ProximitySensor(this);
 
         IntentFilter screenStateFilter = new IntentFilter();
-        screenStateFilter.addAction(Intent.ACTION_SCREEN_ON);
         screenStateFilter.addAction(Intent.ACTION_SCREEN_OFF);
+        screenStateFilter.addAction(Intent.ACTION_USER_PRESENT);
         registerReceiver(mScreenStateReceiver, screenStateFilter);
     }
 
@@ -51,7 +52,7 @@ public class PocketModeService extends Service {
     public void onDestroy() {
         if (DEBUG) Log.d(TAG, "Destroying service");
         this.unregisterReceiver(mScreenStateReceiver);
-        mPocketSensor.disable();
+        mProximitySensor.disable();
         super.onDestroy();
     }
 
@@ -60,15 +61,23 @@ public class PocketModeService extends Service {
         return null;
     }
 
+    private void onDeviceUnlocked() {
+        if (DEBUG) Log.d(TAG, "Device unlocked");
+        mProximitySensor.disable();
+    }
+
+    private void onDisplayOff() {
+        if (DEBUG) Log.d(TAG, "Display off");
+        mProximitySensor.enable();
+    }
+
     private BroadcastReceiver mScreenStateReceiver = new BroadcastReceiver() {
         @Override
         public void onReceive(Context context, Intent intent) {
-            if (intent.getAction().equals(Intent.ACTION_SCREEN_ON)) {
-                if (DEBUG) Log.d(TAG, "Display on");
-                mPocketSensor.disable();
+            if (intent.getAction().equals(Intent.ACTION_USER_PRESENT)) {
+                onDeviceUnlocked();
             } else if (intent.getAction().equals(Intent.ACTION_SCREEN_OFF)) {
-                if (DEBUG) Log.d(TAG, "Display off");
-                mPocketSensor.enable();
+                onDisplayOff();
             }
         }
     };
