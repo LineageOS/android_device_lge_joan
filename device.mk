@@ -238,7 +238,6 @@ PRODUCT_PACKAGES += \
     init.class_main.sh \
     init.joan.hdmi.sh \
     init.lge.usb.lao.sh \
-    init.qcom.class_core.sh \
     init.qcom.post_boot.sh \
     init.qcom.sensors.sh \
     init.qcom.sh \
