@@ -250,7 +250,6 @@ PRODUCT_PACKAGES += \
     init.lge.vendor.on_boot.rc \
     init.lge.vendor.on_post_fs_data.rc \
     init.lge.vendor.on_post_fs.rc \
-    init.lge.vendor.services.rc \
     init.qti.fm.rc \
     vendor.lge.power.rc
 
