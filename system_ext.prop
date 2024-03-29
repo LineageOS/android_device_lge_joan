@@ -4,3 +4,6 @@
 
 # DPM
 persist.vendor.dpm.feature=11
+
+# Logging
+persist.log.tag.SDM=WARNING
