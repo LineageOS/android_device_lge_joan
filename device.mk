@@ -236,7 +236,6 @@ PRODUCT_PACKAGES += \
     init.baseband.sh \
     init.class_main.sh \
     init.joan.hdmi.sh \
-    init.lge.usb.lao.sh \
     init.qcom.post_boot.sh \
     init.qcom.sensors.sh \
     init.qcom.sh \
@@ -258,7 +257,6 @@ PRODUCT_PACKAGES += \
     init.lge.fingerprints.rc \
     init.lge.power.rc \
     init.lge.sensors.rc \
-    init.lge.usb.configfs.rc \
     init.msm8998.rc \
     init.qcom.rc \
     init.qcom.usb.rc \
