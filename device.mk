@@ -158,6 +158,10 @@ PRODUCT_PACKAGES += \
     libqservice \
     memtrack.msm8998
 
+# Doze
+PRODUCT_PACKAGES += \
+    LGDoze
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.4.vendor \
