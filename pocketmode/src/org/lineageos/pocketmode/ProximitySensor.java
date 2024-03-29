@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2016 The CyanogenMod Project
- * Copyright (c) 2018 The LineageOS Project
+ * Copyright (C) 2016 The CyanogenMod Project
+ *               2017-2019 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -22,40 +22,40 @@ import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
-import android.text.TextUtils;
+import android.os.FileUtils;
 import android.util.Log;
 
+import java.io.IOException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
 
-public class PocketSensor implements SensorEventListener {
-    private static final boolean DEBUG = true;
-    private static final String TAG = "PocketSensor";
+public class ProximitySensor implements SensorEventListener {
+    private static final String TAG = "PocketModeProximity";
+    private static final boolean DEBUG = false;
 
-    private static final String DEVICE_PREPARE_FILE =
+    private static final String FP_PROX_NODE =
             "/sys/devices/virtual/input/lge_fingerprint/device_prepare";
 
     private ExecutorService mExecutorService;
-    private SensorManager mSensorManager;
-    private Sensor mSensor;
     private Context mContext;
+    private Sensor mSensor;
+    private SensorManager mSensorManager;
 
-    public PocketSensor(Context context) {
+    public ProximitySensor(Context context) {
         mContext = context;
         mSensorManager = mContext.getSystemService(SensorManager.class);
+        mSensor = mSensorManager.getDefaultSensor(Sensor.TYPE_PROXIMITY);
         mExecutorService = Executors.newSingleThreadExecutor();
+    }
 
-        for (Sensor sensor : mSensorManager.getSensorList(Sensor.TYPE_ALL)) {
-            if (TextUtils.equals(sensor.getName(), "LGE PocketDetection Sensor")) {
-                mSensor = sensor;
-                break;
-            }
-        }
+    private Future<?> submit(Runnable runnable) {
+        return mExecutorService.submit(runnable);
     }
 
     @Override
     public void onSensorChanged(SensorEvent event) {
-        setFPProximityState(event.values[0] == 0.0);
+        setFPProximityState(event.values[0] < mSensor.getMaximumRange());
     }
 
     @Override
@@ -64,24 +64,27 @@ public class PocketSensor implements SensorEventListener {
     }
 
     private void setFPProximityState(boolean isNear) {
-        if (!FileUtils.writeLine(DEVICE_PREPARE_FILE, isNear ? "disable" : "enable")) {
-            Log.e(TAG, "Proximity state file " + DEVICE_PREPARE_FILE + " is not writable!");
+        try {
+            FileUtils.stringToFile(FP_PROX_NODE, isNear ? "disable" : "enable");
+        } catch (IOException e) {
+            Log.e(TAG, "Failed to write to " + FP_PROX_NODE, e);
         }
     }
 
-    void enable() {
+    protected void enable() {
         if (DEBUG) Log.d(TAG, "Enabling");
-        mExecutorService.submit(() -> {
-            mSensorManager.registerListener(this, mSensor, SensorManager.SENSOR_DELAY_NORMAL);
+        submit(() -> {
+            mSensorManager.registerListener(this, mSensor,
+                    SensorManager.SENSOR_DELAY_NORMAL);
         });
     }
 
-    void disable() {
+    protected void disable() {
         if (DEBUG) Log.d(TAG, "Disabling");
-        mExecutorService.submit(() -> {
+        submit(() -> {
             mSensorManager.unregisterListener(this, mSensor);
-            // Ensure FP is left enabled
-            setFPProximityState(/* isNear */ false);
         });
+        // Ensure FP is left enabled
+        setFPProximityState(/* isNear */ false);
     }
 }
