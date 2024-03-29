@@ -16,6 +16,24 @@
       "message": "https://review.lineageos.org/c/LineageOS/android_device_fxtec_pro1/+/281199",
       "revId": "933612a031d6c7159fa0f7ab4787ad790f4529f0",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e1643fa3_a68e5182",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 31496
+      },
+      "writtenOn": "2024-03-29T19:22:05Z",
+      "side": 1,
+      "message": "Or rather https://review.lineageos.org/c/LineageOS/android_device_motorola_msm8998-common/+/381857",
+      "parentUuid": "77e458dc_b686503e",
+      "revId": "933612a031d6c7159fa0f7ab4787ad790f4529f0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
