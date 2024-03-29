@@ -228,9 +228,6 @@ ro.vendor.lge.capp_cupss.rootdir=/OP
 ro.vendor.lge.swversion=H93031a
 
 # Sensors
-debug.vendor.sns.daemon=i
-debug.vendor.sns.libsensor1=e
-persist.vendor.debug.sensors.hal=i
 persist.vendor.lge.sensors.knock_delay=1000
 persist.vendor.lge.sensors.lgpickup=true
 persist.vendor.lge.sensors.pocket_delay=1000
