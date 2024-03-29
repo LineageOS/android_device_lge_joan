@@ -134,11 +134,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.configstore@1.1-service
 
-# Context Hub
-PRODUCT_PACKAGES += \
-    android.hardware.contexthub@1.0-impl.generic \
-    android.hardware.contexthub@1.0-service
-
 # DAC
 PRODUCT_PACKAGES += \
     QuadDACPanel \
