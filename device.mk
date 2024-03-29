@@ -241,8 +241,7 @@ PRODUCT_PACKAGES += \
     init.qcom.post_boot.sh \
     init.qcom.sensors.sh \
     init.qcom.sh \
-    init.qti.fm.sh \
-    init.qti.qseecomd.sh
+    init.qti.fm.sh
 
 PRODUCT_PACKAGES += \
     hw_vari.rc \
