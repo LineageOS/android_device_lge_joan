@@ -1,4 +1,4 @@
-LOCAL_PATH := $(call my-dir)
+LOCAL_PATH:= $(call my-dir)
 
 include $(CLEAR_VARS)
 
@@ -10,6 +10,7 @@ LOCAL_PACKAGE_NAME := LGEPocketMode
 LOCAL_CERTIFICATE := platform
 LOCAL_PRIVATE_PLATFORM_APIS := true
 LOCAL_PRIVILEGED_MODULE := true
+LOCAL_SYSTEM_EXT_MODULE := true
 
 LOCAL_PROGUARD_FLAG_FILES := proguard.flags
 
