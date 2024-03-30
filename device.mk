@@ -239,7 +239,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     init.baseband.proxy.rc \
-    init.joan_vendor.rc \
     init.joan.rc \
     init.lge.fingerprints.rc \
     init.lge.power.rc \
