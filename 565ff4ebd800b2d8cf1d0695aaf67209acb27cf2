@@ -16,6 +16,24 @@
       "message": "Need to wait on 388005",
       "revId": "565ff4ebd800b2d8cf1d0695aaf67209acb27cf2",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "bc1f067c_587d9259",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 31496
+      },
+      "writtenOn": "2024-03-30T22:19:04Z",
+      "side": 1,
+      "message": "This is now merged",
+      "parentUuid": "a20b185d_9586658a",
+      "revId": "565ff4ebd800b2d8cf1d0695aaf67209acb27cf2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
