@@ -25,12 +25,8 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
 
-# TODO: This MUST be blocked not use in LGE device configuration.
 import /vendor/etc/init/hw/init.qcom.usb.rc
-#import /vendor/etc/init/hw/init.msm.usb.configfs.rc
 import /vendor/etc/init/hw/init.target.rc
-#import /vendor/etc/init/hw/init.qcom.factory.rc
-import /vendor/etc/init/hw/init.qcom.test.rc
 
 on early-init
     mount debugfs debugfs /sys/kernel/debug
@@ -57,7 +53,6 @@ on early-init
     rm /data/system/package_cache
 
 on init
-
     # Support legacy paths
     symlink /sdcard /mnt/sdcard
     symlink /sdcard /storage/sdcard0
@@ -69,9 +64,6 @@ on init
     chown root system /sys/fs/cgroup/memory/bg/tasks
     chmod 0660 /sys/fs/cgroup/memory/bg/tasks
 
-on post-fs
-    chmod 0755 /sys/kernel/debug/tracing
-
 on early-boot
     # set RLIMIT_MEMLOCK to 64MB
     setrlimit 8 67108864 67108864
@@ -79,7 +71,6 @@ on early-boot
     write /sys/kernel/boot_adsp/boot 1
     write /sys/kernel/boot_cdsp/boot 1
     write /sys/kernel/boot_slpi/boot 1
-    exec u:r:qti_init_shell:s0 -- /vendor/bin/init.qcom.early_boot.sh
 
     # for backward compatibility
     chown system system /persist/sensors
@@ -211,18 +202,6 @@ on boot
     # bond0 used by FST Manager
     chown wifi wifi /sys/class/net/bond0/bonding/queue_id
 
-# LGE - block mini crash dump related qualcomm changes in phoenix project
-# to remove kernel error log
-    # Allow access to emmc rawdump block partition and dload sysfs node
-#    chown root system /dev/block/bootdevice/by-name/rawdump -p /dev/block/
-#    chmod 0660 /dev/block/bootdevice/by-name/rawdump -p /dev/block/
-#    chown root system /sys/kernel/dload/emmc_dload
-#    chmod 0660 /sys/kernel/dload/emmc_dload
-#    chown root system /dev/block/bootdevice/by-name/ramdump -p /dev/block/
-#    chmod 0660 /dev/block/bootdevice/by-name/ramdump -p /dev/block/
-#    chown root system /sys/kernel/dload/dload_mode
-#    chmod 0660 /sys/kernel/dload/dload_mode
-
     chown system system /sys/class/backlight/panel0-backlight/brightness
     chown system system /sys/class/backlight/panel0-backlight/max_brightness
 
@@ -275,9 +254,6 @@ on post-fs-data
 
     #Create folder of camera
     mkdir /data/vendor/camera 0770 camera camera
-
-#    mkdir /data/media 0770 media_rw media_rw
-#    chown media_rw media_rw /data/media
 
     mkdir /data/vendor/ramdump 0771 root system
     mkdir /data/vendor/bluetooth 0770 bluetooth bluetooth
@@ -363,9 +339,6 @@ on post-fs-data
     chmod 2770 /dev/socket/wifihal
 
     setprop vold.post_fs_data_done 1
-
-    #Create a folder for SRS to be able to create a usercfg file
-    #mkdir /data/data/media 0770 media media
 
     #Create FM dir for patchdownloader
     mkdir /data/vendor/fm 0770 system system
@@ -599,20 +572,6 @@ service vendor.bt-dun /system/bin/dun-server /dev/smd7 /dev/rfcomm0
     disabled
     oneshot
 
-#service vendor.btsnoop /system/bin/btsnoop
-#   user bluetooth
-#   group bluetooth net_bt_admin sdcard_rw sdcard_r media_rw
-#   class late_start
-#   disabled
-#   oneshot
-
-#service vendor.bt_logger /system/bin/bt_logger
-#   user bluetooth
-#   group bluetooth net_bt_admin sdcard_rw sdcard_r media_rw
-#   class late_start
-#   disabled
-#   oneshot
-
 service ftmd /system/bin/logwrapper /system/bin/ftmdaemon
     class late_start
     user root
@@ -783,12 +742,6 @@ service iprenew_wigig0 /system/bin/dhcpcd -n
     disabled
     oneshot
 
-#service ptt_socket_app /system/vendor/bin/ptt_socket_app -d
-#    class main
-#    user root
-#    group root
-#    oneshot
-
 service ptt_ffbm /system/vendor/bin/ptt_socket_app -f -d
     user root
     group root
@@ -837,18 +790,6 @@ service iprenew_bt-pan /system/bin/dhcpcd -n
     disabled
     oneshot
 
-#service ssgqmigd /vendor/bin/ssgqmigd
-#    class late_start
-#    user radio
-#    group radio gps system
-#    socket ssgqmig seqpacket 0660 radio inet
-
-#service ssgtzd /vendor/bin/ssgtzd
-#    class late_start
-#    user system
-#    group system
-#    socket ssgtzd stream 0660 system inet
-
 service mlid /vendor/bin/mlid
     class late_start
     user gps
@@ -896,37 +837,12 @@ service baseband-sh /system/bin/sh /vendor/bin/init.baseband.sh
 on property:sys.boot_completed=1
     start baseband-sh
 
-# LGE - block qti crashdata.sh
-#service crashdata-sh /vendor/bin/init.qcom.crashdata.sh
-#    class late_start
-#    user root
-#    oneshot
-
 service qcom-post-boot /vendor/bin/init.qcom.post_boot.sh
     class late_start
     user root
     group root system wakelock graphics
     disabled
     oneshot
-
-service qti-testscripts /system/bin/sh /system/etc/init.qcom.testscripts.sh
-    class late_start
-    user root
-    disabled
-    oneshot
-    seclabel u:r:qti-testscripts:s0
-
-service wifi-sdio-on /vendor/bin/init.qcom.sdio.sh
-    class late_start
-    group wifi inet
-    disabled
-    oneshot
-
-service wifi-crda /vendor/bin/init.crda.sh
-   class late_start
-   user root
-   disabled
-   oneshot
 
 on property:sys.boot_completed=1
     start qcom-post-boot
@@ -1039,29 +955,6 @@ on property:sys.qbcharger.enable=true
 on property:sys.qbcharger.enable=false
     stop qbcharger
 
-#service diag_mdlog_start /system/vendor/bin/diag_mdlog
-#    class late_start
-#    user shell
-#    group system oem_2901 sdcard_rw sdcard_r media_rw
-#    disabled
-#    oneshot
-
-#service diag_mdlog_stop /system/vendor/bin/diag_mdlog -k
-#    class late_start
-#    user shell
-#    group system oem_2901 sdcard_rw sdcard_r media_rw
-#    disabled
-#    oneshot
-
-#service qlogd /system/xbin/qlogd
-#    socket qlogd stream 0662 system system
-#    class main
-#    disabled
-#on property:persist.sys.qlogd=1
-#    start qlogd
-#on property:persist.sys.qlogd=0
-#    stop qlogd
-
 service vm_bms /vendor/bin/vm_bms
     user root
     group root
@@ -1085,22 +978,6 @@ service vendor.msm_irqbl_sdm630 /vendor/bin/msm_irqbalance -f /system/vendor/etc
     group root
     disabled
 
-# service for USERDEBUG
-service vendor.LKCore-dbg /vendor/bin/LKCore
-    class late_start
-    oneshot
-    disabled
-    user root
-    group root system log diag net_raw
-
-# service for USER
-service vendor.LKCore-rel /vendor/bin/LKCore
-    class late_start
-    oneshot
-    disabled
-    user system
-    group system log diag
-
 service qseeproxydaemon /system/vendor/bin/qseeproxydaemon
     class late_start
     user system
@@ -1109,14 +986,6 @@ service qseeproxydaemon /system/vendor/bin/qseeproxydaemon
 on charger
     setprop persist.sys.usb.config mass_storage
     start qcom-post-boot
-
-#add poweroffhandler
-service poweroffhandler /system/vendor/bin/poweroffhandler
-    class core
-    user media
-    group graphics audio
-    disabled
-    oneshot
 
 on property:init.svc.surfaceflinger=restarting
     stop  vendor.hwcomposer-2-1
@@ -1177,14 +1046,6 @@ service vendor.hbtp /vendor/bin/hbtp_daemon
      group system
      capabilities SYS_NICE
      disabled
-
-# LGE CHRE is not supported in MSM8998
-#service chre /vendor/bin/chre
-#    class late_start
-#    user system
-#    group system
-#    socket chre seqpacket 0660 root system
-#    shutdown critical
 
 service bugreport /system/bin/dumpstate -d -p -B -z -o /data/user_de/0/com.android.shell/files/bugreports/bugreport
     class main
