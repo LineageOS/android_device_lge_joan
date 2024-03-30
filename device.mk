@@ -237,8 +237,6 @@ PRODUCT_PACKAGES += \
     init.baseband.proxy.rc \
     init.joan.rc \
     init.lge.fingerprints.rc \
-    init.lge.power.rc \
-    init.lge.sensors.rc \
     init.msm8998.rc \
     init.qcom.rc \
     init.qcom.usb.rc \
