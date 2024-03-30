@@ -11,10 +11,6 @@ import /vendor/etc/init/hw/init.lge.fingerprints.rc
 # import chipset common rc file
 import /vendor/etc/init/hw/init.msm8998.rc
 
-on post-fs
-# Support tuxera exfat filesystem
-    insmod /vendor/lib/modules/texfat.ko
-
 on post-fs-data
     # NFC: create data/nfc for nv storage
     mkdir /data/vendor/nfc 0770 nfc nfc
