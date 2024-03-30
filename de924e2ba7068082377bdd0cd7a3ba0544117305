@@ -16,6 +16,24 @@
       "message": "Found out that this broke double tap to wake and possibly others, fixup change in a moment.",
       "revId": "de924e2ba7068082377bdd0cd7a3ba0544117305",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ebb82fe0_555bcde6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 31496
+      },
+      "writtenOn": "2024-03-30T04:49:52Z",
+      "side": 1,
+      "message": "I think it\u0027s just tap2wake node needs to chown",
+      "parentUuid": "4f0ae641_c208c6f1",
+      "revId": "de924e2ba7068082377bdd0cd7a3ba0544117305",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ],
   "submitRequirementResults": []
