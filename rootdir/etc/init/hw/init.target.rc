@@ -132,6 +132,10 @@ on boot
     setprop vendor.usb.dpl.inst.name "dpl"
     setprop sys.usb.configfs 1
 
+    # Double tap to wake
+    chown system system /sys/devices/virtual/input/lge_touch/tap2wake
+    chmod 664 /sys/devices/virtual/input/lge_touch/tap2wake
+
 #Peripheral manager
 service vendor.per_mgr /vendor/bin/pm-service
     class core
