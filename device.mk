@@ -238,15 +238,6 @@ PRODUCT_PACKAGES += \
     init.qti.fm.sh
 
 PRODUCT_PACKAGES += \
-    init.lge.audio.rc \
-    init.lge.bootproperty_trigger.rc \
-    init.lge.vendor.on_boot.rc \
-    init.lge.vendor.on_post_fs_data.rc \
-    init.lge.vendor.on_post_fs.rc \
-    init.qti.fm.rc \
-    vendor.lge.power.rc
-
-PRODUCT_PACKAGES += \
     init.baseband.proxy.rc \
     init.joan_vendor.rc \
     init.joan.rc \
@@ -256,6 +247,7 @@ PRODUCT_PACKAGES += \
     init.msm8998.rc \
     init.qcom.rc \
     init.qcom.usb.rc \
+    init.qti.fm.rc \
     init.target.rc
 
 PRODUCT_PACKAGES += \
