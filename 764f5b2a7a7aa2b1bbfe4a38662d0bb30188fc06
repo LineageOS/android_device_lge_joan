@@ -1,4 +1,22 @@
 {
-  "comments": [],
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "de91169f_70d73dd8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 26777
+      },
+      "writtenOn": "2024-03-30T02:02:06Z",
+      "side": 1,
+      "message": "How about the same setting in cmdline? Keep or nuke?\n\u003e BOARD_KERNEL_CMDLINE +\u003d androidboot.usbcontroller\u003da800000.dwc3",
+      "revId": "764f5b2a7a7aa2b1bbfe4a38662d0bb30188fc06",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ],
   "submitRequirementResults": []
 }
