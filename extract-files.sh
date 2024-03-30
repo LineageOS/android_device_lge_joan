@@ -90,6 +90,12 @@ function blob_fixup() {
     vendor/lib/libAutoContrast.so|vendor/lib/libSJFingerDetect.so|vendor/lib/libSJVideoNR.so|vendor/lib/libarcsoft_object_tracking.so|vendor/lib/libarcsoft_picselfie_algorithm.so|vendor/lib/libcinemaeffect.so|vendor/lib/libfilm_emulation_symphony.so|vendor/lib/liblghdri.so|vendor/lib/liblgmda.so|vendor/lib/libmorpho_image_stab31.so|vendor/lib/libmorpho_superzoom.so)
         ${PATCHELF} --replace-needed libstdc++.so libstdc++_vendor.so "${2}"
         ;;
+    vendor/lib/sensors.ssc.so)
+        sed -i "s/\x11\xf0\x9e\xf8/\x4d\xd2\x00\xbf/" "${2}"
+        ;;
+    vendor/lib64/sensors.ssc.so)
+        sed -i "s/\xf2\x8b\xff\x97/\x2a\x00\x00\x14/" "${2}"
+        ;;
     esac
 }
 
