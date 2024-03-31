@@ -62,9 +62,6 @@ function blob_fixup() {
     product/etc/permissions/vendor.qti.hardware.data.connection-V1.*-java.xml)
         sed -i "s/\"2\.0/\"1\.0/g" "${2}"
         ;;
-    vendor/lib*/hw/audio.primary.msm8998.so)
-        ${PATCHELF} --add-needed libprocessgroup.so "${2}"
-        ;;
     vendor/lib/hw/camera.msm8998.so)
         sed -i "s/libandroid\.so/libui_shim\.so/g" "${2}"
         ${PATCHELF} --remove-needed libsensor.so "${2}"
