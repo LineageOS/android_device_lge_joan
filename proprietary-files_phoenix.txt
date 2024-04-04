@@ -534,7 +534,6 @@ vendor/etc/init/netmgrd.rc|3d8770715d15374c4c6a535e3f41ea640d193202
 vendor/etc/init/qcrild.rc|17cf4934bf443cf6469d8b3ff622eeb0e4a0aac6
 vendor/etc/seccomp_policy/atfwd@2.0.policy|74fdb7d47bdb6d0cb06b13701a96a76c9171ab5d
 vendor/lib/LGDataFeature_vendor.so|89c9dea0746cd87639d9015e936ede51d3bac95c
-vendor/lib/libavservices_minijail.so|3ddf0faedf867e3e79e325d4b9806754f8f30dca
 vendor/lib/libconfigdb.so|578aa7edfb5efa139b18bc31ba225cdae6d6de4f
 vendor/lib/libdsi_netctrl.so|dabd03059febf7e3d2e6f5317f2bcafbbac98c18
 vendor/lib/liblqe.so|9a5e926f3120a1b152b92d099469f86277f47d33
@@ -595,7 +594,6 @@ vendor/lib/vendor.qti.hardware.radio.uim_remote_client@1.1.so|d0e4fa596505574f4a
 vendor/lib/vendor.qti.hardware.radio.uim_remote_client@1.2.so|8a5f5614118944c48e8214988563bb09416f2689
 vendor/lib/vendor.qti.hardware.radio.uim_remote_server@1.0.so|97605816c4934efb236905afd62617c85f0d0507
 vendor/lib64/LGDataFeature_vendor.so|4a616eccafce9fca788368d06e6b0a91b5d2001f
-vendor/lib64/libavservices_minijail.so|6449080bad00a1c61d17ccae9c90dfd02480c374
 vendor/lib64/libconfigdb.so|3ccf278c1098bb8bf8385fc71a60827ece0f33d4
 vendor/lib64/libdsi_netctrl.so|6e1832720e634c788764062dbac0c819d966e332
 vendor/lib64/liblqe.so|85bf9bdb8e8d310409df324d8226de45778273de

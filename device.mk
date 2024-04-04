@@ -466,6 +466,7 @@ PRODUCT_PACKAGES += \
 
 # VNDK
 PRODUCT_PACKAGES += \
+    libavservices_minijail \
     libui_shim.vendor \
     libstdc++_vendor
 
