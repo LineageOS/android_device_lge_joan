@@ -16,6 +16,24 @@
       "message": "Something isn\u0027t right. AudioFX now does nothing https://pastebin.com/2kCSgibm",
       "revId": "1f2ccab19e685c4d13e462d057b747802979b3ec",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9480c8e8_a0a03407",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2024-04-05T11:41:50Z",
+      "side": 1,
+      "message": "Your audio HAL is probably too old to support offloading, check if sdm845 HAL has any commit regarding this in `post_proc/virtualizer.c`, you can likely cherry-pick them to msm8998 HAL",
+      "parentUuid": "d8441096_6ed7f934",
+      "revId": "1f2ccab19e685c4d13e462d057b747802979b3ec",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
