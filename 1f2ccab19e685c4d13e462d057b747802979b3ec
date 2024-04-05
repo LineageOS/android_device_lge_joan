@@ -38,6 +38,24 @@
     {
       "unresolved": false,
       "key": {
+        "uuid": "80a0f6dd_58cfcee2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 31496
+      },
+      "writtenOn": "2024-04-05T14:46:02Z",
+      "side": 1,
+      "message": "LGE is using prebuilt audio for other reasons. I\u0027ll have to find another way or drop the commit.",
+      "parentUuid": "9480c8e8_a0a03407",
+      "revId": "1f2ccab19e685c4d13e462d057b747802979b3ec",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
         "uuid": "808b5f25_2e0ed027",
         "filename": "audio/audio_effects.xml",
         "patchSetId": 3
@@ -49,6 +67,30 @@
       "writtenOn": "2024-04-05T13:07:10Z",
       "side": 1,
       "message": "Not sure where you picked this commit from but it\u0027s incomplete. You missed all the qcreverb changes here and below",
+      "range": {
+        "startLine": 61,
+        "startChar": 28,
+        "endLine": 61,
+        "endChar": 36
+      },
+      "revId": "1f2ccab19e685c4d13e462d057b747802979b3ec",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "bc426e8a_32a27697",
+        "filename": "audio/audio_effects.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 61,
+      "author": {
+        "id": 31496
+      },
+      "writtenOn": "2024-04-05T14:46:02Z",
+      "side": 1,
+      "message": "It was forgotten during a rebase. It didn\u0027t exist prior to the revert commit on this change but was reintroduced after.\n\nWill fix.",
+      "parentUuid": "808b5f25_2e0ed027",
       "range": {
         "startLine": 61,
         "startChar": 28,
