@@ -16,6 +16,24 @@
       "message": "What happened to the copyright text?",
       "revId": "e6216612dc6d00523222c35670e7582439f1a29e",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "75a861d1_550fcb0c",
+        "filename": "overlay-lineage/lineage-sdk/packages/LineageSettingsProvider/res/values/defaults.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 31496
+      },
+      "writtenOn": "2024-04-07T04:09:58Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "96ea6c9f_fa7387d1",
+      "revId": "e6216612dc6d00523222c35670e7582439f1a29e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
