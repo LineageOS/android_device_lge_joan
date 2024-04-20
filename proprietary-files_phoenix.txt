@@ -25,8 +25,27 @@ vendor/lib64/vendor.qti.hardware.dsp@1.0.so|7ca76c41ebc45d6b7f8b871d624de0a26b25
 -vendor/lib64/hw/com.dsi.ant@1.0-impl.so|32bc80e74f8a9634bf1a459e78136cfdb890b703
 
 # phoenix_sprout - Audio
+vendor/lib/libacdb-fts.so|042610c28956cebf798c0315d5f878fe4e2a7572
+vendor/lib/libacdbloader.so|30541167f871a7b6a8f55eec4cb602410fa12c6c
+vendor/lib/libacdbrtac.so|b2856ced1ee7b89181f9ae0b484bc800c2085915
+vendor/lib/libadiertac.so|d6c1d35f12df30691a6a38edd9da529a6e4aebd2
+vendor/lib/libadm.so|35460db7533555d048198b669ebbd1f96ba495fd
+vendor/lib/libaudcal.so|f45a9cfe7522d6b7e0ab70146fe8511de2bfff03
+vendor/lib/libaudio_log_utils.so|ba242a92a636f2c2f818a8f56195718d699af4e5
+vendor/lib/libaudioalsa.so|1a06438186c648f81d15d18ab681b9bf977ab408
 -vendor/lib/libaudioparsers.so|a8ad1766511c4055f0424e5ada211bda4a0ee9d4
+vendor/lib/libqtigef.so|67fec669e2043edfe31275899f5a9e9ed09bc658
+vendor/lib/soundfx/libasphere.so|60225c5bb3480fc155a3e6f4828364f0041d2284
+vendor/lib64/libacdb-fts.so|a9f5236757ecdf0de8f5c4726dd0a4361956e6ce
+vendor/lib64/libacdbloader.so|db7ef54ce34790f5ba492b7179a2ffd4657d2b21
+vendor/lib64/libacdbrtac.so|b84a6db95abc9c5226bfa5d3f5f5b4f3cdc1c10b
+vendor/lib64/libadiertac.so|d3b2b930536d37ea5b14197501bda9561275a6e4
+vendor/lib64/libaudcal.so|e3b02bcdf7a319bd862cb68362bfcf0aafd45e29
+vendor/lib64/libaudio_log_utils.so|200db3872dc2bafd86d8257102aef79dc05c7940
+vendor/lib64/libaudioalsa.so|932587d2efa904358b455292859bd9d1d5d51827
 -vendor/lib64/libaudioparsers.so|2a485150809270f527ce53462b938cf567316f4a
+vendor/lib64/libqtigef.so|0593d49269be237457ebb32b3c0367f37f468353
+vendor/lib64/soundfx/libasphere.so|0074f7645a035955e35341f76aa414608ab569ba
 
 # phoenix_sprout - Alarm
 -system_ext/framework/vendor.qti.hardware.alarm-V1.0-java.jar|6508f5708221399eb8bd9754dc49bad32a911e27
