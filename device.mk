@@ -46,13 +46,14 @@ TARGET_INCLUDE_STOCK_ARCORE := true
 
 # Audio
 PRODUCT_PACKAGES += \
-    android.hardware.audio@4.0-impl \
+    android.hardware.audio@6.0-impl \
     android.hardware.audio.service \
-    android.hardware.audio.effect@4.0-impl \
+    android.hardware.audio.effect@6.0-impl \
     android.hardware.soundtrigger@2.1-impl \
     audio.primary.msm8998 \
     audio.r_submix.default \
     audio.usb.default \
+    audio_amplifier.hifi_dac \
     libaacwrapper \
     libaudio-resampler \
     libaudioroute \
@@ -136,7 +137,7 @@ PRODUCT_PACKAGES += \
 # DAC
 PRODUCT_PACKAGES += \
     QuadDACPanel \
-    vendor.lge.hardware.audio.dac.control@2.0-service.proprietary
+    vendor.lge.hardware.audio.dac.control@2.0-service
 
 # Dalvik
 $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
