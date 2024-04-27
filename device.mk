@@ -365,9 +365,7 @@ PRODUCT_COPY_FILES += \
 
 # Power
 $(call inherit-product, hardware/lineage/interfaces/power-libperfmgr/power-libperfmgr.mk)
-
-PRODUCT_PACKAGES += \
-    libqti-perfd-client
+$(call inherit-product, hardware/qcom-caf/common/libqti-perfd-client/libqti-perfd-client.mk)
 
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
