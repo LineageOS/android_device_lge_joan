@@ -156,8 +156,6 @@ vendor/lib/vendor.qti.hardware.qdutils_disp@1.0.so|d117bb02fdf964f86cef9991b709f
 vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so|fe2b9e9b6df7c4c75dab54d120ebfe92b94cca23
 
 # phoenix_sprout - DPM
-bin/dpm|0bffa2bc2277021b6579b32f65edccfd2f2b6ffb
--framework/dpm.jar|0af5dbe707e84e7960dd2cd6bd6617f14a60c486
 system_ext/bin/dpmd|f01b3dc651a41097d104a6fb4b8634bd8b9ff076
 system_ext/etc/dpm/dpm.conf|95e27da8c989e96c6faea6f0697bce11955b62a5
 system_ext/etc/init/dpmd.rc|738b638ff04cda368e22c03e16baf90ba157a6fc
