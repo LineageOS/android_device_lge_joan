@@ -119,6 +119,7 @@ PRODUCT_PACKAGES += \
     camera.device@3.4-impl \
     camera.device@3.4-external-impl \
     vendor.qti.hardware.camera.device@1.0 \
+    libpng.vendor:32 \
     libxml2
 
 # Cgroup and task_profiles
@@ -403,7 +404,8 @@ PRODUCT_PACKAGES += \
     android.hardware.radio.deprecated@1.0.vendor \
     android.system.net.netd@1.1 \
     android.system.net.netd@1.1.vendor \
-    libavservices_minijail.vendor
+    libavservices_minijail.vendor \
+    libsqlite.vendor:64
 
 PRODUCT_PACKAGES += \
     libprotobuf-cpp-full-3.9.1-vendorcompat \
@@ -479,6 +481,7 @@ PRODUCT_PACKAGES += \
 
 # VNDK
 PRODUCT_PACKAGES += \
+    libion.vendor \
     libui_shim.vendor \
     libstdc++_vendor
 
