@@ -119,6 +119,7 @@ PRODUCT_PACKAGES += \
     camera.device@3.4-impl \
     camera.device@3.4-external-impl \
     vendor.qti.hardware.camera.device@1.0 \
+    libpng.vendor:32 \
     libxml2
 
 # Cgroup and task_profiles
@@ -321,7 +322,8 @@ PRODUCT_PACKAGES += \
     libOmxQcelp13Enc \
     libOmxVdec \
     libOmxVenc \
-    libstagefrighthw
+    libstagefrighthw \
+    libstagefright_softomx_plugin.vendor
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -406,7 +408,8 @@ PRODUCT_PACKAGES += \
     android.hardware.radio.deprecated@1.0.vendor \
     android.system.net.netd@1.1 \
     android.system.net.netd@1.1.vendor \
-    libavservices_minijail.vendor
+    libavservices_minijail.vendor \
+    libsqlite.vendor:64
 
 PRODUCT_PACKAGES += \
     libprotobuf-cpp-full-3.9.1-vendorcompat \
@@ -434,7 +437,8 @@ PRODUCT_COPY_FILES += \
 # Sensors
 PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-impl \
-    android.hardware.sensors@1.0-service
+    android.hardware.sensors@1.0-service \
+    libpower.vendor
 
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \
@@ -479,6 +483,7 @@ PRODUCT_PACKAGES += \
 
 # VNDK
 PRODUCT_PACKAGES += \
+    libion.vendor \
     libui_shim.vendor \
     libstdc++_vendor
 
