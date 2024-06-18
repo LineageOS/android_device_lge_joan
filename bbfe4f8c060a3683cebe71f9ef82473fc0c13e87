@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "310fc1ce_c07edb03",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 31496
+      },
+      "writtenOn": "2024-06-18T07:03:30Z",
+      "side": 1,
+      "message": "`Abort message: \u0027ro.surface_flinger.vsync_event_phase_offset_ns is set but expecting duration`",
+      "revId": "bbfe4f8c060a3683cebe71f9ef82473fc0c13e87",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
