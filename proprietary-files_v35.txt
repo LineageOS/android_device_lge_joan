@@ -1,0 +1,4 @@
+# Wifi - from joan - V3520f - joan_kddi_jp-user 9 PKQ1.190414.001 2007610508923 release-keys
+vendor/etc/wifi/bdwlan.bin:vendor/etc/wifi/V35/bdwlan.bin|91d140faa98459142da9fc8ccb1cbc7026b4ff59
+vendor/etc/wifi/bdwlan_ch0.bin:vendor/etc/wifi/V35/bdwlan_ch0.bin|66ec2e6ae282e1e20d9e5967382eb7aa94a62ad5
+vendor/etc/wifi/bdwlan_ch1.bin:vendor/etc/wifi/V35/bdwlan_ch1.bin|024be70167716900fc5bd0d14bbae4c05184b2a3

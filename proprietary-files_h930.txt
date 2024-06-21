@@ -1,4 +1,9 @@
-# Graphics (Firmware) - from joan - PKQ1.190414.001
+# Graphics (Firmware) - from joan - H93031a - joan_global_com-user 9 PKQ1.190414.001 193091504cde8 release-keys
 vendor/firmware/a540_zap.b01:vendor/firmware/H930/a540_zap.b01|e9f83d8919ee02e9814fb9f8f0061e9c4e230c48
 vendor/firmware/a540_zap.elf:vendor/firmware/H930/a540_zap.elf|77226162eb5be7552503b791c664b9d1d9f73ce8
 vendor/firmware/a540_zap.mdt:vendor/firmware/H930/a540_zap.mdt|8383e87e00bb1f7be238c9831c1633b3ae9c6b83
+
+# Wifi - from joan - H93031a - joan_global_com-user 9 PKQ1.190414.001 193091504cde8 release-keys
+vendor/etc/wifi/bdwlan.bin:vendor/etc/wifi/H930/bdwlan.bin|ec11b1e865fad6a255c75219f56b608195939096
+vendor/etc/wifi/bdwlan_ch0.bin:vendor/etc/wifi/H930/bdwlan_ch0.bin|81bed81b3a305375974c71e746c537ac15748e8b
+vendor/etc/wifi/bdwlan_ch1.bin:vendor/etc/wifi/H930/bdwlan_ch1.bin|41af41cc90216ff9c76019c20ee3292c53813faa

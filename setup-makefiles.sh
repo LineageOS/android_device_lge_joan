@@ -34,6 +34,7 @@ write_makefiles "${MY_DIR}/proprietary-files.txt" true
 write_makefiles "${MY_DIR}/proprietary-files_phoenix.txt" true
 write_makefiles "${MY_DIR}/proprietary-files_h930.txt" true
 write_makefiles "${MY_DIR}/proprietary-files_h932.txt" true
+write_makefiles "${MY_DIR}/proprietary-files_v35.txt" true
 
 #append_firmware_calls_to_makefiles "${MY_DIR}/proprietary-firmware.txt"
 

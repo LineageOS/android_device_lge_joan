@@ -104,6 +104,7 @@ if [ -z "${ONLY_FIRMWARE}" ]; then
     extract "${MY_DIR}/proprietary-files_phoenix.txt" "${SRC}" "${KANG}" --section "${SECTION}"
     extract "${MY_DIR}/proprietary-files_h930.txt" "${SRC}" "${KANG}" --section "${SECTION}"
     extract "${MY_DIR}/proprietary-files_h932.txt" "${SRC}" "${KANG}" --section "${SECTION}"
+    extract "${MY_DIR}/proprietary-files_v35.txt" "${SRC}" "${KANG}" --section "${SECTION}"
 fi
 
 #if [ -z "${SECTION}" ]; then
