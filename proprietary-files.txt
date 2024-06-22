@@ -14,3 +14,7 @@ vendor/firmware/a540_zap.b01:vendor/firmware/H932/a540_zap.b01|457d9a928e4e1afba
 vendor/firmware/a540_zap.b02:vendor/firmware/H932/a540_zap.b02|445160805976753ddeb00325bca27961277d797b
 vendor/firmware/a540_zap.elf:vendor/firmware/H932/a540_zap.elf|a7e025fe71ac76405f2b9f1d6972331117829cda
 vendor/firmware/a540_zap.mdt:vendor/firmware/H932/a540_zap.mdt|90897a06637b3cb793a9507a8fb0cde987cb464e
+
+# NFC
+vendor/firmware/libpn548ad_fw.so:vendor/lib/libpn548ad_fw.so
+vendor/firmware/libpn548ad_fw_64.so:vendor/lib64/libpn548ad_fw_64.so
