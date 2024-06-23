@@ -509,5 +509,13 @@ PRODUCT_PACKAGES += \
     ipacm \
     IPACM_cfg.xml
 
+# WiFi firmware symlinks
+PRODUCT_PACKAGES += \
+    firmware_bdwlan.bin_symlink \
+    firmware_bdwlan_ch0.bin_symlink \
+    firmware_bdwlan_ch1.bin_symlink \
+    firmware_WCNSS_qcom_cfg.ini_symlink \
+    firmware_wlan_mac.bin_symlink
+
 # Inherit proprietary blobs
 $(call inherit-product, vendor/lge/joan/joan-vendor.mk)
