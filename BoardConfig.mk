@@ -14,6 +14,10 @@ include device/lge/joan-common/BoardConfigCommon.mk
 # Kernel
 TARGET_KERNEL_CONFIG := lineageos_joan_defconfig
 
+# Partition
+BOARD_SUPER_PARTITION_SIZE := 6157737984
+BOARD_QTI_DYNAMIC_PARTITIONS_SIZE := 6153543680 # (BOARD_SUPER_PARTITION_SIZE - 4194304) 4MiB overhead
+
 # Releasetools
 TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)/releasetools
 
